@@ -97,7 +97,7 @@ nav {
           color: $primary-color;
           i {
             transform: rotate(180deg);
-            transition-delay:0.1s;
+            transition-delay: 0.1s;
           }
         }
 
@@ -261,13 +261,12 @@ nav {
 // APPOINTMENT-SECTION-START
 .col-lg-7 {
   padding: 50px 50px;
-  .app-text{
+  .app-text {
     font-size: 14px;
     color: $grey;
     line-height: 30px;
   }
   .col-lg-4 {
-    
     .app-col {
       padding: 38px 40px;
       border: 1px solid $primary-color;
@@ -289,10 +288,10 @@ nav {
     z-index: -1;
     opacity: 0.2;
   }
-img{
-  width: 118px;
-  padding: 20px 0px;
-}
+  img {
+    width: 118px;
+    padding: 20px 0px;
+  }
   .name-phone {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 30px;
@@ -314,15 +313,13 @@ img{
     option {
       background-color: white;
       color: $black;
-      
+
       border: 0px solid $grey;
       border-radius: 20px !important;
       outline: none;
-      
     }
-    
   }
-  button{
+  button {
     padding: 12px 40px;
     background: #ffffff;
     color: #1ebeb6;
@@ -341,6 +338,70 @@ img{
   z-index: 1;
 }
 // APPOINTMENT-SECTION-END
+
+// SPECIAL-SECTION-START
+#special {
+  .special {
+    background-image: url(../img/sec-doctor.jpg);
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 680px;
+  }
+  .special-bg {
+    position: relative;
+    .spec-info {
+      padding: 80px 50px;
+      background: #ffffff;
+      box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+      position: relative;
+      left: -120px;
+      top: 100px;
+      border-bottom: 3px solid $primary-color;
+      &::after {
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        content: "";
+        height: 300px;
+        width: 300px;
+        background: url(../img/sec-doctor-bg.png);
+        z-index: -1;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+      }
+      h5 {
+        color: $primary-color;
+      }
+      p {
+        font-size: 14px;
+        color: $grey;
+        line-height: 27px;
+      }
+      a {
+        padding: 15px 25px;
+        background: linear-gradient(
+          to right,
+          rgba(30, 190, 182, 1) 0%,
+          rgba(0, 130, 124, 1) 100%
+        );
+        border: 0px;
+        font-weight: 600;
+        color: white;
+        i {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background-color: white;
+          color: $primary-color;
+          line-height: 28px;
+          padding-left: 3px;
+        }
+      }
+    }
+  }
+}
+// SPECIAL-SECTION-END
+
 // footer start
 footer {
   background-color: $footer-bg;
@@ -428,13 +489,29 @@ footer {
   }
 }
 @media only screen and (max-width: 992px) {
-   #emergency{
-    padding: 40px 0px !important;
-    
-  }
-  #appointment{
+  #emergency {
     padding: 40px 0px !important;
   }
+  #appointment {
+    padding: 40px 0px !important;
+  }
+  #special {
+    padding: 0px 90px;
+    .special {
+      height: 500px;
+    }
+
+    .spec-info {
+      position: relative;
+      left: 0px !important;
+      top: 0px !important;
+      margin-bottom: 30px !important;
+      &::after {
+        height: 0px !important;
+      }
+    }
+  }
+
   footer {
     #the-end {
       .end-col-1 {
@@ -470,14 +547,15 @@ footer {
       display: none !important;
     }
   }
-  #emergency{
-    padding: 20px 0px !important;
-    
-  }
-  #appointment{
+  #emergency {
     padding: 20px 0px !important;
   }
-
+  #appointment {
+    padding: 20px 0px !important;
+  }
+  #special {
+    padding: 0px 50px;
+  }
   footer {
     #contact {
       .foot-col-2 {
@@ -510,7 +588,24 @@ footer {
       }
     }
   }
-
+  #emergency {
+    .emer-img {
+      &::before {
+        height: 230px;
+        width: 230px;
+      }
+      &::after {
+        height: 190px;
+        width: 190px;
+      }
+    }
+  }
+  #special {
+    padding: 0px 30px;
+    .special {
+      height: 250px !important;
+    }
+  }
   footer {
     #the-end {
       .end-icon-1 {

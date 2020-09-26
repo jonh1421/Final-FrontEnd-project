@@ -360,6 +360,68 @@ nav .active {
   font-size: 15px;
 }
 
+#special .special {
+  background-image: url(../img/sec-doctor.jpg);
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 680px;
+}
+
+#special .special-bg {
+  position: relative;
+}
+
+#special .special-bg .spec-info {
+  padding: 80px 50px;
+  background: #ffffff;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+  left: -120px;
+  top: 100px;
+  border-bottom: 3px solid #1ebeb6;
+}
+
+#special .special-bg .spec-info::after {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  content: "";
+  height: 300px;
+  width: 300px;
+  background: url(../img/sec-doctor-bg.png);
+  z-index: -1;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+#special .special-bg .spec-info h5 {
+  color: #1ebeb6;
+}
+
+#special .special-bg .spec-info p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 27px;
+}
+
+#special .special-bg .spec-info a {
+  padding: 15px 25px;
+  background: linear-gradient(to right, #1ebeb6 0%, #00827c 100%);
+  border: 0px;
+  font-weight: 600;
+  color: white;
+}
+
+#special .special-bg .spec-info a i {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  color: #1ebeb6;
+  line-height: 28px;
+  padding-left: 3px;
+}
+
 footer {
   background-color: #001d4c;
 }
@@ -449,6 +511,21 @@ footer #the-end p {
   #appointment {
     padding: 40px 0px !important;
   }
+  #special {
+    padding: 0px 90px;
+  }
+  #special .special {
+    height: 500px;
+  }
+  #special .spec-info {
+    position: relative;
+    left: 0px !important;
+    top: 0px !important;
+    margin-bottom: 30px !important;
+  }
+  #special .spec-info::after {
+    height: 0px !important;
+  }
   footer #the-end .end-col-1 {
     display: flex !important;
     justify-content: center !important;
@@ -485,6 +562,9 @@ footer #the-end p {
   #appointment {
     padding: 20px 0px !important;
   }
+  #special {
+    padding: 0px 50px;
+  }
   footer #contact .foot-col-2 {
     align-items: flex-start !important;
     margin-top: 30px !important;
@@ -513,6 +593,20 @@ footer #the-end p {
   }
   nav .navbar-brand img {
     height: 40px !important;
+  }
+  #emergency .emer-img::before {
+    height: 230px;
+    width: 230px;
+  }
+  #emergency .emer-img::after {
+    height: 190px;
+    width: 190px;
+  }
+  #special {
+    padding: 0px 30px;
+  }
+  #special .special {
+    height: 250px !important;
   }
   footer #the-end .end-icon-1 {
     margin: 0px 2px !important;
