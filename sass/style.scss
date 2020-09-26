@@ -401,7 +401,119 @@ nav {
   }
 }
 // SPECIAL-SECTION-END
+#doctors {
+  background-color: #f7f7f7;
+  .doctors {
+    h5 {
+      color: $primary-color;
+    }
+    h3 {
+      &::before {
+        background: #1ebeb6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: -25px;
+        position: absolute;
+        width: 40px;
+        top: 81px;
+      }
+      &::after {
+        background: #1ebeb6 none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: 20px;
+        position: absolute;
+        width: 5px;
+        top: 81px;
+      }
+    }
+    p {
+      width: 58%;
+      font-size: 15px;
+      color: $grey;
+      line-height: 28px;
+    }
+  }
+  .nav {
+    .nav-link {
+      background: rgba(30, 190, 182, 0.1) !important;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $border-color;
+      border-radius: inherit;
+      padding: 20px 15px;
+      color: $black;
+      font-size: 15px;
+      font-weight: 600;
+      .fa-user-cog {
+        margin-right: 12px;
+      }
+    }
+    .active {
+      background: rgba(30, 190, 182, 1) !important;
+      color: white;
+    }
+  }
+  .tab-pane {
+    .col-lg-6 {
+      padding: 0px 22px 32px 22px !important;
+      .info {
+        padding: 30px 40px;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        &::after {
+          position: absolute;
+          left: -15px;
+          top: 30px;
+          content: "";
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-right: 15px solid #ffffff;
+        }
+        span {
+          color: $primary-color;
+        }
+        p {
+          font-size: 14px !important;
+          color: $grey;
+          line-height: 25px;
+        }
 
+        a {
+          padding: 15px 25px;
+          background: linear-gradient(
+            to right,
+            rgba(30, 190, 182, 1) 0%,
+            rgba(0, 130, 124, 1) 100%
+          );
+          border: 0px;
+          border-radius: 2px;
+          font-weight: 600;
+          color: white;
+          &:hover {
+            text-decoration: none;
+          }
+
+          i {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: white;
+            color: $primary-color;
+            line-height: 28px;
+            padding-left: 12px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
 // footer start
 footer {
   background-color: $footer-bg;
@@ -464,7 +576,19 @@ footer {
   .nav-contact {
     padding: 20px 0px;
   }
+  #doctors {
+    .tab-pane {
+      .col-lg-6 {
+        .info {
+          span {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
 }
+
 @media only screen and (max-width: 1023px) {
   nav {
     height: auto !important;
@@ -508,6 +632,36 @@ footer {
       margin-bottom: 30px !important;
       &::after {
         height: 0px !important;
+      }
+    }
+  }
+  #doctors {
+    .nav {
+      flex-direction: row !important;
+      .nav-link {
+        width: 50%;
+        padding-right: 10px !important;
+      }
+    }
+    .tab-pane {
+      .col-lg-6 {
+        padding: 0px !important;
+
+        .info {
+          span {
+            font-size: 14px !important;
+          }
+          margin-bottom: 30px !important;
+          &::after {
+            left: 50% !important;
+            top: -15px !important;
+            border-top: transparent !important;
+            border-bottom: 15px solid #ffffff !important;
+            border-right: 15px solid transparent !important;
+            border-left: 15px solid transparent !important;
+            margin-left: -15px !important;
+          }
+        }
       }
     }
   }
@@ -555,6 +709,15 @@ footer {
   }
   #special {
     padding: 0px 50px;
+  }
+  #doctors {
+    .nav {
+      flex-direction: column !important;
+      .nav-link {
+        width: 100% !important;
+        padding-right: 10px !important;
+      }
+    }
   }
   footer {
     #contact {
