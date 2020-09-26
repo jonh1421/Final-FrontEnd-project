@@ -122,14 +122,14 @@ nav .navbar-nav i {
   margin-right: 22px;
 }
 
-nav .nav-contact .emergency {
+nav .nav-contact .nav-emergency {
   font-size: 11px;
   font-weight: 600;
   color: #666666;
   cursor: pointer;
 }
 
-nav .nav-contact .emergency span {
+nav .nav-contact .nav-emergency span {
   font-size: 17px;
   letter-spacing: -0.5px;
   cursor: pointer;
@@ -201,9 +201,63 @@ nav .active {
   display: block;
 }
 
-#contact {
+#emergency {
+  color: #666666;
+  font-size: 15px;
+}
+
+#emergency .emer-col {
+  padding: 0px 40px;
+}
+
+#emergency .emer-icon {
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/icon-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#emergency h5 {
+  color: #233645;
+  letter-spacing: 0.8px;
+}
+
+footer {
   background-color: #001d4c;
+}
+
+footer #contact {
   color: #96aac1;
+  font-size: 15px;
+}
+
+footer #contact li {
+  font-weight: 600;
+}
+
+footer #contact .foot-col-4 {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 37px;
+  border-bottom: 2px solid #1ebeb6;
+}
+
+footer #contact .foot-col-4 h6 {
+  color: white;
+  font-size: 15px;
+}
+
+footer #the-end {
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  color: white;
+}
+
+footer #the-end p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -228,9 +282,6 @@ nav .active {
 }
 
 @media only screen and (max-width: 1023px) {
-  .navigation {
-    display: none !important;
-  }
   nav {
     height: auto !important;
   }
@@ -243,20 +294,31 @@ nav .active {
   nav .navbar-brand img {
     height: 45px !important;
   }
-  .nav-contact {
+  nav .nav-button {
+    display: block;
+  }
+  nav .navigation {
+    display: none !important;
+  }
+  nav .nav-contact {
     padding: 20px 0px;
   }
-  .nav-button {
-    display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  footer #the-end .end-col-1 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  footer #the-end .end-col-2 {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .header-head {
     display: none;
-  }
-  .navigation {
-    display: none !important;
   }
   nav {
     height: auto !important;
@@ -271,18 +333,25 @@ nav .active {
   nav .navbar-brand img {
     height: 40px !important;
   }
-  .nav-contact {
+  nav .nav-contact {
     display: none !important;
+  }
+  footer #contact .foot-col-2 {
+    align-items: flex-start !important;
+    margin-top: 30px !important;
+  }
+  footer #contact .foot-col-2 h5 {
+    margin-left: 15px !important;
+  }
+  footer #contact .foot-col-3 {
+    margin-top: 30px !important;
+  }
+  footer #contact .foot-col-4 {
+    margin-left: 0px !important;
   }
 }
 
 @media only screen and (max-width: 577px) {
-  .header-head {
-    display: none;
-  }
-  .navigation {
-    display: none !important;
-  }
   nav {
     height: auto !important;
   }
@@ -296,8 +365,14 @@ nav .active {
   nav .navbar-brand img {
     height: 40px !important;
   }
-  .nav-contact {
-    display: none !important;
+  footer #the-end .end-icon-1 {
+    margin: 0px 2px !important;
+  }
+  footer #the-end .end-icon-2 {
+    margin: 0px 2px !important;
+  }
+  footer #the-end .end-icon-3 {
+    margin: 0px 2px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
