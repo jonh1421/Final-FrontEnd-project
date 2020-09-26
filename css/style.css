@@ -104,6 +104,7 @@ nav .navbar-nav .link:hover a {
 
 nav .navbar-nav .link:hover a i {
   transform: rotate(180deg);
+  transition-delay: 0.1s;
 }
 
 nav .navbar-nav .link:hover .link-hover {
@@ -274,6 +275,91 @@ nav .active {
   letter-spacing: 0.8px;
 }
 
+.col-lg-7 {
+  padding: 50px 50px;
+}
+
+.col-lg-7 .app-text {
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+
+.col-lg-7 .col-lg-4 .app-col {
+  padding: 38px 40px;
+  border: 1px solid #1ebeb6;
+}
+
+.col-lg-7 .col-lg-4 .app-col i {
+  color: #1ebeb6;
+  font-size: 45px;
+}
+
+.appoinment-box {
+  background-color: #1ebeb6;
+  color: white;
+  padding: 60px 37px;
+  position: relative;
+  z-index: 1;
+}
+
+.appoinment-box .app-absolute {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  height: 100%;
+  width: 100%;
+  background: #1ebeb6;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.appoinment-box img {
+  width: 118px;
+  padding: 20px 0px;
+}
+
+.appoinment-box .name-phone, .appoinment-box .mddt {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 25px;
+  color: #ffffff !important;
+  min-height: 45px;
+}
+
+.appoinment-box .name-phone::placeholder, .appoinment-box .mddt::placeholder {
+  color: white !important;
+}
+
+.appoinment-box .name-phone:focus, .appoinment-box .mddt:focus {
+  background-color: transparent;
+}
+
+.appoinment-box .mddt {
+  outline: none;
+}
+
+.appoinment-box .mddt option {
+  background-color: white;
+  color: #233645;
+  border: 0px solid #666666;
+  border-radius: 20px !important;
+  outline: none;
+}
+
+.appoinment-box button {
+  padding: 12px 40px;
+  background: #ffffff;
+  color: #1ebeb6;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
 footer {
   background-color: #001d4c;
 }
@@ -357,6 +443,12 @@ footer #the-end p {
 }
 
 @media only screen and (max-width: 992px) {
+  #emergency {
+    padding: 40px 0px !important;
+  }
+  #appointment {
+    padding: 40px 0px !important;
+  }
   footer #the-end .end-col-1 {
     display: flex !important;
     justify-content: center !important;
@@ -386,6 +478,12 @@ footer #the-end p {
   }
   nav .nav-contact {
     display: none !important;
+  }
+  #emergency {
+    padding: 20px 0px !important;
+  }
+  #appointment {
+    padding: 20px 0px !important;
   }
   footer #contact .foot-col-2 {
     align-items: flex-start !important;
