@@ -51,6 +51,15 @@
   font-size: 14px;
 }
 
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background-color: white;
+}
+
 nav {
   height: 90px;
   padding: 0px !important;
@@ -118,8 +127,18 @@ nav .navbar-nav a {
   letter-spacing: 0.3px;
 }
 
+nav .navbar-nav a:hover {
+  color: #1ebeb6;
+  transition: 0.3s;
+}
+
 nav .navbar-nav i {
   margin-right: 22px;
+}
+
+nav .navbar-nav i:hover {
+  color: #1ebeb6;
+  transition: 0.3s;
 }
 
 nav .nav-contact .nav-emergency {
@@ -206,11 +225,43 @@ nav .active {
   font-size: 15px;
 }
 
+#emergency p {
+  line-height: 30px;
+}
+
 #emergency .emer-col {
   padding: 0px 40px;
 }
 
+#emergency .emer-img::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  height: 340px;
+  width: 340px;
+  background: #1ebeb6;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+#emergency .emer-img::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  height: 290px;
+  width: 290px;
+  background: #1ebeb6;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 #emergency .emer-icon {
+  color: #1ebeb6;
   width: 100%;
   height: 100px;
   background-image: url(../img/icon-bg.svg);
