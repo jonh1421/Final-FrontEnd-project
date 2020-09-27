@@ -32,3 +32,46 @@ dropButton.forEach((e) => {
   });
 });
 // NAV-MOBILE-MENU-TOGGLE-END
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 0,
+  dots: true,
+  responsiveClass: true,
+
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 1,
+      nav: false,
+    },
+
+    
+    1000: {
+      items: 2.5,
+      nav: false,
+      loop: true,
+    },
+   
+  },
+});
+// $('.testimonials-carousel').owlCarousel({
+//   loop: true,
+//   nav: false,
+//   margin: 30,
+//   dots: true,
+//   autoplay: false,
+//   items: 1,
+//   navText: [
+//     "<i class='fa fa-angle-left'></i>",
+//     "<i class='fa fa-angle-right'></i>"
+//   ],
+//   responsive: {
+//     1000: {
+//       stagePadding: 100,
+//       items: 2,
+//     }
+//   }
+// });

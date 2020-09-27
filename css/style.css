@@ -537,6 +537,145 @@ nav .active {
   margin-right: 5px;
 }
 
+#testimonials {
+  overflow: hidden;
+}
+
+#testimonials .col-lg-5 {
+  padding: 0px !important;
+}
+
+#testimonials .col-lg-5 .test-head {
+  padding-left: 160px;
+  padding-right: 40px;
+}
+
+#testimonials .col-lg-5 .test-head h6 {
+  padding: 10px 0px;
+}
+
+#testimonials .col-lg-5 .test-head h2 {
+  padding: 10px 0px;
+}
+
+#testimonials .col-lg-5 .test-head::before {
+  position: absolute;
+  left: 145;
+  top: -100px;
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 120px;
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+#testimonials .col-lg-5 .test-head::after {
+  position: absolute;
+  right: 0;
+  top: -150%;
+  height: 770px;
+  width: 100%;
+  background: #1ebeb6;
+  z-index: -1;
+  content: "";
+}
+
+#testimonials .col-lg-5 .test-head h6 {
+  color: white;
+}
+
+#testimonials .col-lg-5 .test-head h2 {
+  color: white;
+}
+
+#testimonials .col-lg-5 .test-head a {
+  padding: 10px 23px;
+  background: white;
+  border: 0px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #233645;
+  font-size: 14px;
+}
+
+#testimonials .col-lg-5 .test-head a:hover {
+  text-decoration: none;
+}
+
+#testimonials .col-lg-5 .test-head a i {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #1ebeb6;
+  color: white;
+  line-height: 28px;
+  padding-left: 3px;
+  margin-right: 5px;
+}
+
+#testimonials .col-lg-7 {
+  padding: 0px !important;
+  padding-left: 30px !important;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item {
+  padding: 20px 20px !important;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item {
+  padding: 30px 50px !important;
+  box-shadow: 0 0 10px #e7e7e7;
+  background: #ffffff;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item p {
+  font-size: 15px;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item span {
+  font-size: 11px !important;
+  text-transform: uppercase;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item span strong {
+  color: #1ebeb6;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item .provider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item .provider .thumb {
+  height: 80px;
+  width: 80px;
+  margin-right: 15px;
+  margin: auto auto 30px;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item .provider .thumb img {
+  border-radius: 50%;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item .provider .bio h5 {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#testimonials .col-lg-7 .owl-carousel .owl-item .item .info {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #666666;
+  text-align: center;
+}
+
 footer {
   background-color: #001d4c;
 }
@@ -595,6 +734,17 @@ footer #the-end p {
   }
   #doctors .tab-pane .col-lg-6 .info span {
     font-size: 14px !important;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    top: -150%;
+    height: 1000px !important;
+    width: 100%;
   }
 }
 
@@ -669,6 +819,22 @@ footer #the-end p {
     border-left: 15px solid transparent !important;
     margin-left: -15px !important;
   }
+  #testimonials .test-head {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    height: 700% !important;
+  }
+  #testimonials .col-lg-7 {
+    padding: 0px 100px !important;
+  }
   footer #the-end .end-col-1 {
     display: flex !important;
     justify-content: center !important;
@@ -715,6 +881,9 @@ footer #the-end p {
     width: 100% !important;
     padding-right: 10px !important;
   }
+  #testimonials .col-lg-7 {
+    padding: 0px 60px !important;
+  }
   footer #contact .foot-col-2 {
     align-items: flex-start !important;
     margin-top: 30px !important;
@@ -757,6 +926,21 @@ footer #the-end p {
   }
   #special .special {
     height: 250px !important;
+  }
+  #testimonials .test-head h2 {
+    font-size: 20px;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    height: 600% !important;
+  }
+  #testimonials .col-lg-7 {
+    padding: 0px 10px !important;
   }
   footer #the-end .end-icon-1 {
     margin: 0px 2px !important;
