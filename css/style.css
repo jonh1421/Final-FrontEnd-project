@@ -179,6 +179,7 @@ nav .active {
   top: 0;
   left: 0;
   overflow: scroll;
+  z-index: 1000;
 }
 
 .mobile-menu ul {
@@ -275,27 +276,27 @@ nav .active {
   letter-spacing: 0.8px;
 }
 
-.col-lg-7 {
+#appointment .col-lg-7 {
   padding: 50px 50px;
 }
 
-.col-lg-7 .app-text {
+#appointment .col-lg-7 .app-text {
   font-size: 14px;
   color: #666666;
   line-height: 30px;
 }
 
-.col-lg-7 .col-lg-4 .app-col {
+#appointment .col-lg-7 .col-lg-4 .app-col {
   padding: 38px 40px;
   border: 1px solid #1ebeb6;
 }
 
-.col-lg-7 .col-lg-4 .app-col i {
+#appointment .col-lg-7 .col-lg-4 .app-col i {
   color: #1ebeb6;
   font-size: 45px;
 }
 
-.appoinment-box {
+#appointment .appoinment-box {
   background-color: #1ebeb6;
   color: white;
   padding: 60px 37px;
@@ -303,7 +304,7 @@ nav .active {
   z-index: 1;
 }
 
-.appoinment-box .app-absolute {
+#appointment .appoinment-box .app-absolute {
   position: absolute;
   left: -30px;
   top: -30px;
@@ -314,12 +315,12 @@ nav .active {
   opacity: 0.2;
 }
 
-.appoinment-box img {
+#appointment .appoinment-box img {
   width: 118px;
   padding: 20px 0px;
 }
 
-.appoinment-box .name-phone, .appoinment-box .mddt {
+#appointment .appoinment-box .name-phone, #appointment .appoinment-box .mddt {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -328,19 +329,19 @@ nav .active {
   min-height: 45px;
 }
 
-.appoinment-box .name-phone::placeholder, .appoinment-box .mddt::placeholder {
+#appointment .appoinment-box .name-phone::placeholder, #appointment .appoinment-box .mddt::placeholder {
   color: white !important;
 }
 
-.appoinment-box .name-phone:focus, .appoinment-box .mddt:focus {
+#appointment .appoinment-box .name-phone:focus, #appointment .appoinment-box .mddt:focus {
   background-color: transparent;
 }
 
-.appoinment-box .mddt {
+#appointment .appoinment-box .mddt {
   outline: none;
 }
 
-.appoinment-box .mddt option {
+#appointment .appoinment-box .mddt option {
   background-color: white;
   color: #233645;
   border: 0px solid #666666;
@@ -348,7 +349,7 @@ nav .active {
   outline: none;
 }
 
-.appoinment-box button {
+#appointment .appoinment-box button {
   padding: 12px 40px;
   background: #ffffff;
   color: #1ebeb6;
@@ -676,6 +677,117 @@ nav .active {
   text-align: center;
 }
 
+#contact .col-lg-7 {
+  background-image: url(../img/contact.jpg);
+  height: 467px;
+  background-size: cover;
+}
+
+#contact .col-lg-7 .contact-info {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  padding: 30px;
+  background: #ffffff;
+  right: 30px;
+}
+
+#contact .col-lg-7 .contact-info .contact-info-item h6 {
+  color: #233645;
+}
+
+#contact .col-lg-7 .contact-info .contact-info-item h6 i {
+  color: #1ebeb6;
+  margin-right: 8px;
+}
+
+#contact .col-lg-7 .contact-info .contact-info-item span {
+  font-size: 15px;
+  color: #666666;
+}
+
+#contact .col-lg-5 {
+  padding-left: 50px;
+}
+
+#contact .col-lg-5 h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#contact .col-lg-5 h2 strong {
+  display: block;
+  color: #1ebeb6;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+#contact .col-lg-5 form .col-lg-12 .form-group {
+  margin-bottom: 1rem;
+}
+
+#contact .col-lg-5 form .col-lg-12 .form-group input {
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0;
+  border-radius: inherit;
+}
+
+#contact .col-lg-5 form .col-lg-12 .form-group span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #666666;
+}
+
+#contact .col-lg-5 form .col-lg-6 .form-group {
+  margin-bottom: 1rem;
+}
+
+#contact .col-lg-5 form .col-lg-6 .form-group input {
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0;
+  border-radius: inherit;
+}
+
+#contact .col-lg-5 form .col-lg-6 .form-group span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #666666;
+}
+
+#contact .col-lg-5 form .col-lg-12 button {
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  padding: 12px 35px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 15px;
+  border: none !important;
+  box-shadow: inherit !important;
+  outline: inherit !important;
+}
+
+#contact .col-lg-5 form .col-lg-12 .form-group {
+  margin-bottom: 1rem;
+}
+
+#contact .col-lg-5 form .col-lg-12 .form-group textarea {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 150px;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0;
+  border-radius: inherit;
+}
+
 footer {
   background-color: #001d4c;
 }
@@ -835,6 +947,18 @@ footer #the-end p {
   #testimonials .col-lg-7 {
     padding: 0px 100px !important;
   }
+  #contact .col-lg-7 .contact-info {
+    flex-direction: column !important;
+    bottom: -30px;
+    box-shadow: 0 0 10px #e7e7e7 !important;
+  }
+  #contact .col-lg-7 .contact-info .contact-info-item {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  #contact .col-lg-5 {
+    padding-top: 50px !important;
+  }
   footer #the-end .end-col-1 {
     display: flex !important;
     justify-content: center !important;
@@ -928,7 +1052,7 @@ footer #the-end p {
     height: 250px !important;
   }
   #testimonials .test-head h2 {
-    font-size: 20px;
+    font-size: 15px !important;
   }
   #testimonials .test-head::before {
     position: absolute;

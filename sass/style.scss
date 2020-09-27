@@ -170,6 +170,7 @@ nav {
   top: 0;
   left: 0;
   overflow: scroll;
+  z-index: 1000;
 
   ul {
     padding-left: 15px !important;
@@ -259,84 +260,87 @@ nav {
   }
 }
 // APPOINTMENT-SECTION-START
-.col-lg-7 {
-  padding: 50px 50px;
-  .app-text {
-    font-size: 14px;
-    color: $grey;
-    line-height: 30px;
-  }
-  .col-lg-4 {
-    .app-col {
-      padding: 38px 40px;
-      border: 1px solid $primary-color;
-      i {
-        color: $primary-color;
-        font-size: 45px;
+#appointment {
+  .col-lg-7 {
+    padding: 50px 50px;
+    .app-text {
+      font-size: 14px;
+      color: $grey;
+      line-height: 30px;
+    }
+    .col-lg-4 {
+      .app-col {
+        padding: 38px 40px;
+        border: 1px solid $primary-color;
+        i {
+          color: $primary-color;
+          font-size: 45px;
+        }
       }
     }
   }
-}
-.appoinment-box {
-  .app-absolute {
-    position: absolute;
-    left: -30px;
-    top: -30px;
-    height: 100%;
-    width: 100%;
-    background: #1ebeb6;
-    z-index: -1;
-    opacity: 0.2;
-  }
-  img {
-    width: 118px;
-    padding: 20px 0px;
-  }
-  .name-phone {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 0 25px;
-    color: #ffffff !important;
-    min-height: 45px;
-    &::placeholder {
-      color: white !important;
+  .appoinment-box {
+    .app-absolute {
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      height: 100%;
+      width: 100%;
+      background: #1ebeb6;
+      z-index: -1;
+      opacity: 0.2;
     }
-    &:focus {
-      background-color: transparent;
+    img {
+      width: 118px;
+      padding: 20px 0px;
     }
-  }
+    .name-phone {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0 25px;
+      color: #ffffff !important;
+      min-height: 45px;
+      &::placeholder {
+        color: white !important;
+      }
+      &:focus {
+        background-color: transparent;
+      }
+    }
 
-  .mddt {
-    @extend .name-phone;
-    outline: none;
-    option {
-      background-color: white;
-      color: $black;
-
-      border: 0px solid $grey;
-      border-radius: 20px !important;
+    .mddt {
+      @extend .name-phone;
       outline: none;
-    }
-  }
-  button {
-    padding: 12px 40px;
-    background: #ffffff;
-    color: #1ebeb6;
-    text-transform: capitalize;
-    font-weight: 600;
-    width: 100%;
-    border: none;
-    border-radius: 30px;
-    font-size: 15px;
-  }
+      option {
+        background-color: white;
+        color: $black;
 
-  background-color: $primary-color;
-  color: white;
-  padding: 60px 37px;
-  position: relative;
-  z-index: 1;
+        border: 0px solid $grey;
+        border-radius: 20px !important;
+        outline: none;
+      }
+    }
+    button {
+      padding: 12px 40px;
+      background: #ffffff;
+      color: #1ebeb6;
+      text-transform: capitalize;
+      font-weight: 600;
+      width: 100%;
+      border: none;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    background-color: $primary-color;
+    color: white;
+    padding: 60px 37px;
+    position: relative;
+    z-index: 1;
+  }
 }
+
 // APPOINTMENT-SECTION-END
 
 // SPECIAL-SECTION-START
@@ -640,6 +644,124 @@ nav {
   }
 }
 // TESTIMONIALS-SECTION-END
+
+// CONTACT-SECTION-START
+#contact {
+  .col-lg-7 {
+    background-image: url(../img/contact.jpg);
+    height: 467px;
+    background-size: cover;
+
+    .contact-info {
+      position: absolute;
+      left: 30px;
+      bottom: 0;
+      padding: 30px;
+      background: #ffffff;
+      right: 30px;
+
+      .contact-info-item {
+        h6 {
+          color: $black;
+          i {
+            color: $primary-color;
+            margin-right: 8px;
+          }
+        }
+        span {
+          font-size: 15px;
+          color: $grey;
+        }
+      }
+    }
+  }
+  .col-lg-5 {
+    padding-left: 50px;
+    h2 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      strong {
+        display: block;
+        color: #1ebeb6;
+        margin-top: 5px;
+        font-weight: 700;
+      }
+    }
+    form {
+      .col-lg-12 {
+        .form-group {
+          margin-bottom: 1rem;
+          input {
+            border: none;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 0;
+            border-radius: inherit;
+          }
+          span {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            overflow-x: hidden;
+            background-color: #ffffff;
+            color: #666666;
+          }
+        }
+      }
+      .col-lg-6 {
+        .form-group {
+          margin-bottom: 1rem;
+          input {
+            border: none;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 0;
+            border-radius: inherit;
+          }
+          span {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            overflow-x: hidden;
+            background-color: #ffffff;
+            color: #666666;
+          }
+        }
+      }
+
+      .col-lg-12 {
+        button {
+          background: linear-gradient(
+            90deg,
+            rgba(30, 190, 182, 1) 0%,
+            rgba(0, 130, 124, 1) 100%
+          );
+          padding: 12px 35px;
+          border-radius: 30px;
+          color: #ffffff;
+          font-weight: 700;
+          margin-top: 15px;
+          border: none !important;
+          box-shadow: inherit !important;
+          outline: inherit !important;
+        }
+      }
+      .col-lg-12 {
+        .form-group {
+          margin-bottom: 1rem;
+          textarea {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            height: 150px;
+            border: none;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 0;
+            border-radius: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+// CONTACT-SECTION-END
 // footer start
 footer {
   background-color: $footer-bg;
@@ -826,6 +948,22 @@ footer {
       padding: 0px 100px !important;
     }
   }
+  #contact {
+    .col-lg-7 {
+      .contact-info {
+        flex-direction: column !important;
+        bottom: -30px;
+        box-shadow: 0 0 10px #e7e7e7 !important;
+        .contact-info-item{
+          margin: 0px !important;
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+    .col-lg-5 {
+      padding-top: 50px !important;
+    }
+  }
 
   footer {
     #the-end {
@@ -938,7 +1076,7 @@ footer {
   #testimonials {
     .test-head {
       h2 {
-        font-size: 20px;
+        font-size: 15px !important;
       }
       &::before {
         position: absolute;

@@ -35,7 +35,8 @@ dropButton.forEach((e) => {
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 0,
-  dots: true,
+  dotsEach: true,
+  
   responsiveClass: true,
 
   responsive: {
@@ -50,7 +51,7 @@ $(".owl-carousel").owlCarousel({
 
     
     1000: {
-      items: 2.5,
+      items: 2.6,
       nav: false,
       loop: true,
     },
