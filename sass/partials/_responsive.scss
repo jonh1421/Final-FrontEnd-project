@@ -1,0 +1,419 @@
+// 1200 * 1200 * 1200 * 1200 * RESPONSIVE 1200 * 1200 * 1200 * 1200
+// 1200 * 1200 * 1200 * 1200 * RESPONSIVE 1200 * 1200 * 1200 * 1200
+// 1200 * 1200 * 1200 * 1200 * RESPONSIVE 1200 * 1200 * 1200 * 1200
+@media only screen and (max-width: 1200px) {
+  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  .header-head {
+    .head-first {
+      p {
+        text-align: center !important;
+      }
+    }
+    .head-second {
+      justify-content: center !important;
+    }
+  }
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+  }
+  nav {
+    height: auto !important;
+    .navbar-brand {
+      margin-bottom: 90px;
+    }
+  }
+  .nav-contact {
+    padding: 20px 0px;
+  }
+
+  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  #doctors {
+    .tab-pane {
+      .col-lg-6 {
+        .info {
+          span {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  #testimonials {
+    .test-head {
+      &::before {
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -100px !important;
+      }
+
+      &::after {
+        top: -150%;
+        height: 1000px !important;
+        width: 100%;
+      }
+    }
+  }
+}
+// 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
+// 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
+// 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
+@media only screen and (max-width: 1023px) {
+  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  nav {
+    height: auto !important;
+    .navbar-brand {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: flex-end;
+      width: 300px;
+      img {
+        height: 45px !important;
+      }
+    }
+    .nav-button {
+      display: block !important;
+    }
+    .navigation {
+      display: none !important;
+    }
+    .nav-contact {
+      padding: 20px 0px;
+    }
+  }
+}
+// 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
+// 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
+// 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
+@media only screen and (max-width: 992px) {
+  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
+  #emergency {
+    padding: 40px 0px !important;
+  }
+  #service {
+    .col-lg-6 {
+      margin-bottom: 40px;
+      .modalIntro {
+        position: relative !important;
+        left: 0 !important;
+        bottom: 0px !important;
+      }
+    }
+  }
+  // APPOINTMENT *  APPOINTMENT *  APPOINTMENT *  APPOINTMENT
+  #appointment {
+    padding: 40px 0px !important;
+  }
+  #special {
+    padding: 0px 90px;
+    .special {
+      height: 500px;
+    }
+
+    .spec-info {
+      position: relative;
+      left: 0px !important;
+      top: 0px !important;
+      margin-bottom: 30px !important;
+      &::after {
+        height: 0px !important;
+      }
+    }
+  }
+
+  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  #doctors {
+    .nav {
+      flex-direction: row !important;
+      .nav-link {
+        width: 50%;
+        padding-right: 10px !important;
+      }
+    }
+    .tab-pane {
+      .col-lg-6 {
+        padding: 0px !important;
+
+        .info {
+          span {
+            font-size: 14px !important;
+          }
+          margin-bottom: 30px !important;
+          &::after {
+            left: 50% !important;
+            top: -15px !important;
+            border-top: transparent !important;
+            border-bottom: 15px solid #ffffff !important;
+            border-right: 15px solid transparent !important;
+            border-left: 15px solid transparent !important;
+            margin-left: -15px !important;
+          }
+        }
+      }
+    }
+  }
+
+  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  #testimonials {
+    .test-head {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      &::before {
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -100px !important;
+      }
+
+      &::after {
+        height: 700% !important;
+      }
+    }
+    .col-lg-7 {
+      padding: 0px 100px !important;
+    }
+  }
+
+  // CONTACT * CONTACT * CONTACT * CONTACT * CONTACT
+  #contact {
+    .col-lg-7 {
+      .contact-info {
+        flex-direction: column !important;
+        bottom: -30px;
+        box-shadow: 0 0 10px #e7e7e7 !important;
+        .contact-info-item {
+          margin: 0px !important;
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+    .col-lg-5 {
+      padding-top: 50px !important;
+    }
+  }
+
+  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  footer {
+    #the-end {
+      .end-col-1 {
+        display: flex !important;
+        justify-content: center !important;
+      }
+      .end-col-2 {
+        display: flex !important;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+// 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
+// 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
+// 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
+@media only screen and (max-width: 767px) {
+  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  .header-head {
+    display: none;
+  }
+
+  nav {
+    height: auto !important;
+    .navbar-brand {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: flex-end;
+      width: 300px;
+      margin-left: 70px !important;
+      img {
+        height: 40px !important;
+      }
+    }
+
+    .nav-contact {
+      display: none !important;
+    }
+  }
+
+  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
+  #emergency {
+    padding: 20px 0px !important;
+  }
+
+  // APPOINTMENT *  APPOINTMENT *  APPOINTMENT *  APPOINTMENT
+  #appointment {
+    padding: 20px 0px !important;
+  }
+  #service {
+    .col-lg-6 {
+      .img-shape {
+        padding: 0px !important;
+      }
+    }
+    .col-lg-6{
+        padding-left: 15px !important;
+    }
+  }
+
+  // SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL
+  #special {
+    padding: 0px 50px;
+  }
+
+  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  #doctors {
+    .nav {
+      flex-direction: column !important;
+      .nav-link {
+        width: 100% !important;
+        padding-right: 10px !important;
+      }
+    }
+  }
+
+  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  #testimonials {
+    .col-lg-7 {
+      padding: 0px 60px !important;
+    }
+  }
+
+  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  footer {
+    #contacts {
+      .foot-col-2 {
+        align-items: flex-start !important;
+        margin-top: 30px !important;
+        h5 {
+          margin-left: 15px !important;
+        }
+      }
+      .foot-col-3 {
+        margin-top: 30px !important;
+      }
+      .foot-col-4 {
+        margin-left: 0px !important;
+      }
+    }
+  }
+}
+// 577 * 577 * 577 * 577 * RESPONSIVE 577 * 577 * 577 * 577
+// 577 * 577 * 577 * 577 * RESPONSIVE 577 * 577 * 577 * 577
+// 577 * 577 * 577 * 577 * RESPONSIVE 577 * 577 * 577 * 577
+@media only screen and (max-width: 577px) {
+  nav {
+    height: auto !important;
+    .navbar-brand {
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: flex-end;
+      width: max-content;
+      margin-left: 10px !important;
+      img {
+        height: 40px !important;
+      }
+    }
+  }
+
+  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
+  #emergency {
+    .emer-img {
+      &::before {
+        height: 230px;
+        width: 230px;
+      }
+      &::after {
+        height: 190px;
+        width: 190px;
+      }
+    }
+  }
+  #service {
+    .col-lg-6 {
+      padding-right: 15 !important;
+      margin-bottom: 40px;
+      .modalIntro {
+        flex-direction: column;
+        position: relative !important;
+        left: 0 !important;
+        bottom: -20px !important;
+        padding: 50px 30px !important;
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 10px !important;
+          h5 {
+            font-size: 17px !important;
+            margin-top: 20px !important;
+          }
+        }
+      }
+    }
+    .col-lg-6 {
+      .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        ul{
+          text-align: left;
+          flex-direction: column;
+        }
+      }
+      padding-right: 15px !important;
+      h2 {
+        font-size: 25px !important;
+      }
+    }
+  }
+  // SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL
+  #special {
+    padding: 0px 30px;
+    .special {
+      height: 250px !important;
+    }
+  }
+
+  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  #testimonials {
+    .test-head {
+      h2 {
+        font-size: 15px !important;
+      }
+      &::before {
+        position: absolute;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: -100px !important;
+      }
+
+      &::after {
+        height: 600% !important;
+      }
+    }
+    .col-lg-7 {
+      padding: 0px 10px !important;
+    }
+  }
+
+  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  footer {
+    #the-end {
+      .end-icon-1 {
+        margin: 0px 2px !important;
+      }
+      .end-icon-2 {
+        margin: 0px 2px !important;
+      }
+      .end-icon-3 {
+        margin: 0px 2px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+ 
+}

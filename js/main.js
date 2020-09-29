@@ -1,28 +1,22 @@
 // NAV-SCROLL-FIXED-START
 let nav = document.querySelector("nav");
+let linkHover = document.querySelector(".link-hover");
+let link = document.querySelector(".link");
+ let mobileMenu = document.querySelector(".mobile-menu");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 60) {
-    nav.classList.add("fixed")
-    
-  }
-  else {
-    nav.classList.remove("fixed")
-  }
-})
-// NAV-SCROLL-FIXED-END
-// NAV-MOBILE-MENU-TOGGLE-START
-let navButton = document.querySelector(".nav-button i");
-let mobileMenu = document.querySelector(".mobile-menu");
-navButton.addEventListener("click", function () {
-  if (navButton.classList.contains("fa-bars")) {
-    navButton.classList.replace("fa-bars", "fa-times");
-    mobileMenu.style.transform = "translateY(0)";
-    mobileMenu.style.transition = "0.4s";
+    nav.classList.add("fixed");
+    mobileMenu.classList.add("mob-fixed")
   } else {
-    navButton.classList.replace("fa-times", "fa-bars");
-    mobileMenu.style.transform = "translateY(-100%)";
-    mobileMenu.style.transition = "0.4s";
+    nav.classList.remove("fixed");
+    mobileMenu.classList.remove("mob-fixed");
   }
+});
+
+$(document).ready(function () {
+  $(".nav-button i").click(function () {
+    $(".mobile-menu").slideToggle(400);
+  });
 });
 // MOBILE-MENU-DROPDOWN
 let dropButton = document.querySelectorAll(".dropbtn");
@@ -32,11 +26,11 @@ dropButton.forEach((e) => {
   });
 });
 // NAV-MOBILE-MENU-TOGGLE-END
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel.myowl").owlCarousel({
   loop: true,
   margin: 0,
-  dotsEach: true,
-  
+  dotsEach: 2,
+
   responsiveClass: true,
 
   responsive: {
@@ -49,30 +43,32 @@ $(".owl-carousel").owlCarousel({
       nav: false,
     },
 
-    
     1000: {
       items: 2.6,
       nav: false,
+      dots: true,
       loop: true,
     },
-   
   },
 });
-// $('.testimonials-carousel').owlCarousel({
-//   loop: true,
-//   nav: false,
-//   margin: 30,
-//   dots: true,
-//   autoplay: false,
-//   items: 1,
-//   navText: [
-//     "<i class='fa fa-angle-left'></i>",
-//     "<i class='fa fa-angle-right'></i>"
-//   ],
-//   responsive: {
-//     1000: {
-//       stagePadding: 100,
-//       items: 2,
-//     }
-//   }
-// });
+
+$(document).ready(function () {
+  $(".owl-carousel.owl-theme").owlCarousel();
+});
+$(".owl-carousel.owl-theme").owlCarousel({
+  margin: 27,
+
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});
+
+AOS.init();

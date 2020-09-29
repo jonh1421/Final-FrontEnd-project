@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+// **************** MY-CLASS-CSS-START ***************
+.sec-pad-y {
+  padding: 100px 0px;
+}
+%mychange {
+  display: inline-block !important;
+  color: $secondColor;
+  background-color: $thirdColor !important;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  i {
+    font-size: 25px;
+    line-height: 60px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+// **************** MY-CLASS-CSS-END ****************
