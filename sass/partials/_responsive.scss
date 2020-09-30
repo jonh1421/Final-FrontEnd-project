@@ -238,6 +238,9 @@
   // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
   #emergency {
     padding: 20px 0px !important;
+    .emer-img{
+      display: none !important;
+    }
   }
 
   // APPOINTMENT *  APPOINTMENT *  APPOINTMENT *  APPOINTMENT
@@ -401,12 +404,20 @@
       }
     }
     .col-lg-7 {
-      padding: 0px 10px !important;
+      padding: 0px 15px !important;
     }
   }
 
   // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
   footer {
+    #contacts{
+     .foot-col-1{
+       .col-2.foot  {
+       padding-right: 0px !important;
+       padding-left: 20px !important;
+     }
+     }
+    }
     #the-end {
       .end-icon-1 {
         margin: 0px 2px !important;

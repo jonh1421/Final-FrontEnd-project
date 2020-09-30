@@ -1,310 +1,3 @@
-@media only screen and (max-width: 1200px) {
-  .header-head .head-first p {
-    text-align: center !important;
-  }
-  .header-head .head-second {
-    justify-content: center !important;
-  }
-  .navbar-nav {
-    flex-direction: column-reverse !important;
-  }
-  nav {
-    height: auto !important;
-  }
-  nav .navbar-brand {
-    margin-bottom: 90px;
-  }
-  .nav-contact {
-    padding: 20px 0px;
-  }
-  #doctors .tab-pane .col-lg-6 .info span {
-    font-size: 14px !important;
-  }
-  #testimonials .test-head::before {
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    top: -100px !important;
-  }
-  #testimonials .test-head::after {
-    top: -150%;
-    height: 1000px !important;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  nav {
-    height: auto !important;
-  }
-  nav .navbar-brand {
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: flex-end;
-    width: 300px;
-  }
-  nav .navbar-brand img {
-    height: 45px !important;
-  }
-  nav .nav-button {
-    display: block !important;
-  }
-  nav .navigation {
-    display: none !important;
-  }
-  nav .nav-contact {
-    padding: 20px 0px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  #emergency {
-    padding: 40px 0px !important;
-  }
-  #service .col-lg-6 {
-    margin-bottom: 40px;
-  }
-  #service .col-lg-6 .modalIntro {
-    position: relative !important;
-    left: 0 !important;
-    bottom: 0px !important;
-  }
-  #appointment {
-    padding: 40px 0px !important;
-  }
-  #special {
-    padding: 0px 90px;
-  }
-  #special .special {
-    height: 500px;
-  }
-  #special .spec-info {
-    position: relative;
-    left: 0px !important;
-    top: 0px !important;
-    margin-bottom: 30px !important;
-  }
-  #special .spec-info::after {
-    height: 0px !important;
-  }
-  #doctors .nav {
-    flex-direction: row !important;
-  }
-  #doctors .nav .nav-link {
-    width: 50%;
-    padding-right: 10px !important;
-  }
-  #doctors .tab-pane .col-lg-6 {
-    padding: 0px !important;
-  }
-  #doctors .tab-pane .col-lg-6 .info {
-    margin-bottom: 30px !important;
-  }
-  #doctors .tab-pane .col-lg-6 .info span {
-    font-size: 14px !important;
-  }
-  #doctors .tab-pane .col-lg-6 .info::after {
-    left: 50% !important;
-    top: -15px !important;
-    border-top: transparent !important;
-    border-bottom: 15px solid #ffffff !important;
-    border-right: 15px solid transparent !important;
-    border-left: 15px solid transparent !important;
-    margin-left: -15px !important;
-  }
-  #testimonials .test-head {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  #testimonials .test-head::before {
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    top: -100px !important;
-  }
-  #testimonials .test-head::after {
-    height: 700% !important;
-  }
-  #testimonials .col-lg-7 {
-    padding: 0px 100px !important;
-  }
-  #contact .col-lg-7 .contact-info {
-    flex-direction: column !important;
-    bottom: -30px;
-    box-shadow: 0 0 10px #e7e7e7 !important;
-  }
-  #contact .col-lg-7 .contact-info .contact-info-item {
-    margin: 0px !important;
-    margin-bottom: 20px !important;
-  }
-  #contact .col-lg-5 {
-    padding-top: 50px !important;
-  }
-  footer #the-end .end-col-1 {
-    display: flex !important;
-    justify-content: center !important;
-  }
-  footer #the-end .end-col-2 {
-    display: flex !important;
-    justify-content: center !important;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .header-head {
-    display: none;
-  }
-  nav {
-    height: auto !important;
-  }
-  nav .navbar-brand {
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: flex-end;
-    width: 300px;
-    margin-left: 70px !important;
-  }
-  nav .navbar-brand img {
-    height: 40px !important;
-  }
-  nav .nav-contact {
-    display: none !important;
-  }
-  #emergency {
-    padding: 20px 0px !important;
-  }
-  #appointment {
-    padding: 20px 0px !important;
-  }
-  #service .col-lg-6 .img-shape {
-    padding: 0px !important;
-  }
-  #service .col-lg-6 {
-    padding-left: 15px !important;
-  }
-  #special {
-    padding: 0px 50px;
-  }
-  #doctors .nav {
-    flex-direction: column !important;
-  }
-  #doctors .nav .nav-link {
-    width: 100% !important;
-    padding-right: 10px !important;
-  }
-  #testimonials .col-lg-7 {
-    padding: 0px 60px !important;
-  }
-  footer #contacts .foot-col-2 {
-    align-items: flex-start !important;
-    margin-top: 30px !important;
-  }
-  footer #contacts .foot-col-2 h5 {
-    margin-left: 15px !important;
-  }
-  footer #contacts .foot-col-3 {
-    margin-top: 30px !important;
-  }
-  footer #contacts .foot-col-4 {
-    margin-left: 0px !important;
-  }
-}
-
-@media only screen and (max-width: 577px) {
-  nav {
-    height: auto !important;
-  }
-  nav .navbar-brand {
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: flex-end;
-    width: max-content;
-    margin-left: 10px !important;
-  }
-  nav .navbar-brand img {
-    height: 40px !important;
-  }
-  #emergency .emer-img::before {
-    height: 230px;
-    width: 230px;
-  }
-  #emergency .emer-img::after {
-    height: 190px;
-    width: 190px;
-  }
-  #appointment .appoinment-box .app-absolute {
-    position: relative !important;
-  }
-  #service .col-lg-6 {
-    padding-right: 15 !important;
-    margin-bottom: 40px;
-  }
-  #service .col-lg-6 .modalIntro {
-    flex-direction: column;
-    position: relative !important;
-    left: 0 !important;
-    bottom: -20px !important;
-    padding: 50px 30px !important;
-  }
-  #service .col-lg-6 .modalIntro .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px !important;
-  }
-  #service .col-lg-6 .modalIntro .content h5 {
-    font-size: 17px !important;
-    margin-top: 20px !important;
-  }
-  #service .col-lg-6 {
-    padding-right: 15px !important;
-  }
-  #service .col-lg-6 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-  }
-  #service .col-lg-6 .info ul {
-    text-align: left;
-    flex-direction: column;
-  }
-  #service .col-lg-6 h2 {
-    font-size: 25px !important;
-  }
-  #special {
-    padding: 0px 30px;
-  }
-  #special .special {
-    height: 250px !important;
-  }
-  #testimonials .test-head h2 {
-    font-size: 15px !important;
-  }
-  #testimonials .test-head::before {
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    top: -100px !important;
-  }
-  #testimonials .test-head::after {
-    height: 600% !important;
-  }
-  #testimonials .col-lg-7 {
-    padding: 0px 10px !important;
-  }
-  footer #the-end .end-icon-1 {
-    margin: 0px 2px !important;
-  }
-  footer #the-end .end-icon-2 {
-    margin: 0px 2px !important;
-  }
-  footer #the-end .end-icon-3 {
-    margin: 0px 2px !important;
-  }
-}
-
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -507,7 +200,7 @@ header .fixed {
 }
 
 header .mobile-menu {
-  height: 55vh;
+  height: 38vh;
   width: 100%;
   background-color: #ffffff !important;
   display: none;
@@ -741,14 +434,46 @@ header .mob-fixed {
   align-items: center;
 }
 
+#service .range .col-lg-6 .img-shape .modalIntro .video {
+  z-index: 0;
+}
+
 #service .range .col-lg-6 .img-shape .modalIntro .video a {
   text-align: center;
   border-radius: 50%;
   padding-left: 6px !important;
+  z-index: 50 !important;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#service .range .col-lg-6 .img-shape .modalIntro .video a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -4px;
+  top: -4px;
+  width: 68px;
+  height: 68px;
+  background: #1ebeba;
+  border-radius: 50%;
+  animation: play 1.5s ease-out infinite;
+}
+
+@keyframes play {
+  from {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.4, 1.4);
+  }
 }
 
 #service .range .col-lg-6 .img-shape .modalIntro .content {
   padding: 30px;
+  padding-top: 50px;
 }
 
 #service .range .col-lg-6 {
@@ -761,15 +486,23 @@ header .mob-fixed {
 }
 
 #service .range .col-lg-6 .info h3 {
-  letter-spacing: 0;
+  letter-spacing: 0.8px;
   margin: 0;
   color: #233645;
   margin-bottom: 25px;
+  word-spacing: 3px;
 }
 
 #service .range .col-lg-6 .info p {
   text-align: justify;
   margin-bottom: 40px;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#service .range .col-lg-6 .info ul {
+  padding: 0px;
 }
 
 #service .range .col-lg-6 .info ul li {
@@ -819,10 +552,49 @@ header .mob-fixed {
   padding-left: 3px;
 }
 
+#service .text-content h5 {
+  color: #1ebeb6;
+  font-weight: 550;
+}
+
+#service .text-content h2 {
+  font-weight: 600;
+  color: #233645;
+}
+
+#service .text-content h2::before {
+  background: #1ebeb6 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  top: 90px;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+#service .text-content h2::after {
+  background: #1ebeb6 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  top: 90px;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+#service .text-content p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 450;
+}
+
 #service .text-content hr {
   width: 40px;
   background-color: #1ebeb6;
   height: 1px;
+  opacity: 0;
 }
 
 #service .owl-carousel {
@@ -944,6 +716,132 @@ header .mob-fixed {
   padding-top: 12px;
 }
 
+#service .service .item-sec {
+  padding: 50px 30px 50px 30px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #e7e7e7;
+  position: relative;
+  z-index: 1;
+  margin: 10px;
+}
+
+#service .service .item-sec .info-sec:hover .icon-sec::before {
+  animation: infin 10s infinite linear;
+  opacity: 1;
+}
+
+@keyframes infin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#service .service .item-sec .info-sec h4 {
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+#service .service .item-sec .info-sec h4 a {
+  color: #233645;
+  outline: none;
+}
+
+#service .service .item-sec .info-sec h4 a:hover {
+  text-decoration: none;
+}
+
+#service .service .item-sec .info-sec .icon-sec {
+  display: inline-block;
+  font-size: 45px;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  height: 90px;
+  width: 90px;
+  line-height: 92px;
+}
+
+#service .service .item-sec .info-sec .icon-sec::before {
+  position: absolute;
+  left: -9%;
+  top: -9%;
+  content: "";
+  height: 120%;
+  width: 120%;
+  background: url(../img/about/1.png);
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.35s ease-in-out;
+}
+
+#service .service .item-sec .info-sec .icon-sec i {
+  position: absolute;
+  left: 3%;
+  top: 2%;
+  height: 95%;
+  width: 95%;
+  background: #1ebeb6;
+  z-index: -1;
+  border-radius: 50%;
+  text-align: center;
+  padding: 21px;
+  font-size: 38px;
+}
+
+#service .service .item-sec .info-sec p {
+  color: #666666;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+#service .service .item-sec .info-sec a.btn {
+  background-color: transparent;
+  color: #1ebeb6 !important;
+  border: 1px solid #1ebeb6 !important;
+  background: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#service .service .item-sec .info-sec a.btn i {
+  font-size: 14px;
+  background-color: #1ebeb6;
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+#service .service .item-sec .info-sec a.btn:hover {
+  background-color: #1ebeb6;
+  color: #ffffff !important;
+}
+
+#service .service .item-sec .info-sec a.btn:hover i {
+  color: #1ebeb6 !important;
+  background-color: white !important;
+}
+
 #appointment .col-lg-7 {
   padding: 50px 50px;
 }
@@ -1016,7 +914,100 @@ header .mob-fixed {
   outline: none;
 }
 
-#appointment .col-lg-5 .appoinment-box button {
+#appointment .col-lg-5 .appoinment-box .dropdown-menu {
+  top: -12px !important;
+  left: 0 !important;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-menu .dropdown-item {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 30px;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  display: block;
+  margin: 0;
+  background-color: white;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-menu .dropdown-item:active {
+  color: #233645;
+  background-color: white;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-menu .selected-option {
+  font-weight: bold;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-menu button {
+  outline: none;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-toggle {
+  position: relative;
+  text-align: left;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 25px;
+  color: white;
+  min-height: 50px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-toggle:focus {
+  outline: none;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-toggle::after {
+  content: "\f107";
+  position: absolute;
+  top: 17px;
+  right: 14px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  transition-delay: 0.01s;
+  transition: all 0.33s;
+  line-height: 1;
+  border: 0;
+  vertical-align: baseline;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown-toggle::placeholder {
+  color: #ffffff;
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown.show .dropdown-toggle::after {
+  content: "\f107";
+  transform: rotate(-180deg);
+}
+
+#appointment .col-lg-5 .appoinment-box .dropdown.show .dropdown-menu {
+  padding: 0 !important;
+  animation: dropAnime 0.3s forwards !important;
+}
+
+@keyframes dropAnime {
+  0% {
+    transform: scale(0.7, 0.7) translate3d(-20px, 20px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate3d(6px, 63px, 0);
+    opacity: 1;
+  }
+}
+
+#appointment .col-lg-5 .appoinment-box button#f-submit {
   padding: 12px 40px;
   background: #ffffff;
   color: #1ebeb6;
@@ -1203,6 +1194,74 @@ header .mob-fixed {
   line-height: 28px;
   padding-left: 12px;
   margin-right: 5px;
+}
+
+#doctors .single-item {
+  margin-bottom: 30px;
+}
+
+#doctors .single-item .item-doc {
+  background: #ffffff;
+}
+
+#doctors .single-item .item-doc .thumb-doc {
+  position: relative;
+  z-index: 1;
+}
+
+#doctors .single-item .item-doc .thumb-doc .contact-doc {
+  background: linear-gradient(90deg, #1ebeb6 0%, #00827c 100%);
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translate(-50%, 0);
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+#doctors .single-item .item-doc .thumb-doc .contact-doc ul {
+  display: flex !important;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#doctors .single-item .item-doc .thumb-doc .contact-doc ul li {
+  margin: 0 5px;
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+}
+
+#doctors .single-item .item-doc .thumb-doc .contact-doc ul li::after {
+  display: flex !important;
+  margin: 0 5px;
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+}
+
+#doctors .single-item .item-doc .thumb-doc .contact-doc ul li a {
+  display: inline-block;
+  color: #ffffff;
+}
+
+#doctors .single-item .item-doc .info {
+  text-align: center;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+#doctors .single-item .item-doc .info h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#doctors .single-item .item-doc .info span {
+  color: #1ebeb6;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 #testimonials {
@@ -1394,6 +1453,35 @@ header .mob-fixed {
   margin-top: -5px;
 }
 
+#blog .text-content h2 {
+  font-weight: 600;
+  color: #233645;
+}
+
+#blog .text-content h2::before {
+  background: #1ebeb6 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+  top: 81px;
+}
+
+#blog .text-content h2::after {
+  background: #1ebeb6 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  top: 81px;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
 #blog .text-content h4 {
   color: #1ebeb6;
 }
@@ -1410,6 +1498,7 @@ header .mob-fixed {
   width: 40px;
   background-color: #1ebeb6;
   height: 1px;
+  opacity: 0;
 }
 
 #blog .item-news {
@@ -1777,5 +1866,387 @@ footer #the-end p {
 
 .bg-color .col-lg-8 ul li a i {
   margin-right: 5px;
+}
+
+#count {
+  position: relative;
+  z-index: 1;
+}
+
+#count::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 50%;
+  width: 100%;
+  background: #ffffff;
+  z-index: -1;
+}
+
+#count .container .fun-fact-items {
+  position: relative;
+  z-index: 1;
+  padding: 120px 50px;
+}
+
+#count .container .fun-fact-items::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(../img/sec-bag.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  opacity: 1;
+  background-color: #1ebeb6;
+}
+
+#count .container .fun-fact-items .row {
+  display: flex;
+}
+
+#count .container .fun-fact-items .row .item .fun-fact {
+  display: flex;
+  flex-direction: column;
+}
+
+#count .container .fun-fact-items .row .item .fun-fact .timer {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+  margin-left: -20px;
+}
+
+#count .container .fun-fact-items .row .item .fun-fact .timer i {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#count .container .fun-fact-items .row .item .fun-fact .span {
+  display: block;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-head .head-first p {
+    text-align: center !important;
+  }
+  .header-head .head-second {
+    justify-content: center !important;
+  }
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+  }
+  nav {
+    height: auto !important;
+  }
+  nav .navbar-brand {
+    margin-bottom: 90px;
+  }
+  .nav-contact {
+    padding: 20px 0px;
+  }
+  #doctors .tab-pane .col-lg-6 .info span {
+    font-size: 14px !important;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    top: -150%;
+    height: 1000px !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  nav {
+    height: auto !important;
+  }
+  nav .navbar-brand {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+  }
+  nav .navbar-brand img {
+    height: 45px !important;
+  }
+  nav .nav-button {
+    display: block !important;
+  }
+  nav .navigation {
+    display: none !important;
+  }
+  nav .nav-contact {
+    padding: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #emergency {
+    padding: 40px 0px !important;
+  }
+  #service .col-lg-6 {
+    margin-bottom: 40px;
+  }
+  #service .col-lg-6 .modalIntro {
+    position: relative !important;
+    left: 0 !important;
+    bottom: 0px !important;
+  }
+  #appointment {
+    padding: 40px 0px !important;
+  }
+  #special {
+    padding: 0px 90px;
+  }
+  #special .special {
+    height: 500px;
+  }
+  #special .spec-info {
+    position: relative;
+    left: 0px !important;
+    top: 0px !important;
+    margin-bottom: 30px !important;
+  }
+  #special .spec-info::after {
+    height: 0px !important;
+  }
+  #doctors .nav {
+    flex-direction: row !important;
+  }
+  #doctors .nav .nav-link {
+    width: 50%;
+    padding-right: 10px !important;
+  }
+  #doctors .tab-pane .col-lg-6 {
+    padding: 0px !important;
+  }
+  #doctors .tab-pane .col-lg-6 .info {
+    margin-bottom: 30px !important;
+  }
+  #doctors .tab-pane .col-lg-6 .info span {
+    font-size: 14px !important;
+  }
+  #doctors .tab-pane .col-lg-6 .info::after {
+    left: 50% !important;
+    top: -15px !important;
+    border-top: transparent !important;
+    border-bottom: 15px solid #ffffff !important;
+    border-right: 15px solid transparent !important;
+    border-left: 15px solid transparent !important;
+    margin-left: -15px !important;
+  }
+  #testimonials .test-head {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    height: 700% !important;
+  }
+  #testimonials .col-lg-7 {
+    padding: 0px 100px !important;
+  }
+  #contact .col-lg-7 .contact-info {
+    flex-direction: column !important;
+    bottom: -30px;
+    box-shadow: 0 0 10px #e7e7e7 !important;
+  }
+  #contact .col-lg-7 .contact-info .contact-info-item {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  #contact .col-lg-5 {
+    padding-top: 50px !important;
+  }
+  footer #the-end .end-col-1 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  footer #the-end .end-col-2 {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-head {
+    display: none;
+  }
+  nav {
+    height: auto !important;
+  }
+  nav .navbar-brand {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    margin-left: 70px !important;
+  }
+  nav .navbar-brand img {
+    height: 40px !important;
+  }
+  nav .nav-contact {
+    display: none !important;
+  }
+  #emergency {
+    padding: 20px 0px !important;
+  }
+  #emergency .emer-img {
+    display: none !important;
+  }
+  #appointment {
+    padding: 20px 0px !important;
+  }
+  #service .col-lg-6 .img-shape {
+    padding: 0px !important;
+  }
+  #service .col-lg-6 {
+    padding-left: 15px !important;
+  }
+  #special {
+    padding: 0px 50px;
+  }
+  #doctors .nav {
+    flex-direction: column !important;
+  }
+  #doctors .nav .nav-link {
+    width: 100% !important;
+    padding-right: 10px !important;
+  }
+  #testimonials .col-lg-7 {
+    padding: 0px 60px !important;
+  }
+  footer #contacts .foot-col-2 {
+    align-items: flex-start !important;
+    margin-top: 30px !important;
+  }
+  footer #contacts .foot-col-2 h5 {
+    margin-left: 15px !important;
+  }
+  footer #contacts .foot-col-3 {
+    margin-top: 30px !important;
+  }
+  footer #contacts .foot-col-4 {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  nav {
+    height: auto !important;
+  }
+  nav .navbar-brand {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: max-content;
+    margin-left: 10px !important;
+  }
+  nav .navbar-brand img {
+    height: 40px !important;
+  }
+  #emergency .emer-img::before {
+    height: 230px;
+    width: 230px;
+  }
+  #emergency .emer-img::after {
+    height: 190px;
+    width: 190px;
+  }
+  #appointment .appoinment-box .app-absolute {
+    position: relative !important;
+  }
+  #service .col-lg-6 {
+    padding-right: 15 !important;
+    margin-bottom: 40px;
+  }
+  #service .col-lg-6 .modalIntro {
+    flex-direction: column;
+    position: relative !important;
+    left: 0 !important;
+    bottom: -20px !important;
+    padding: 50px 30px !important;
+  }
+  #service .col-lg-6 .modalIntro .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px !important;
+  }
+  #service .col-lg-6 .modalIntro .content h5 {
+    font-size: 17px !important;
+    margin-top: 20px !important;
+  }
+  #service .col-lg-6 {
+    padding-right: 15px !important;
+  }
+  #service .col-lg-6 .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+  }
+  #service .col-lg-6 .info ul {
+    text-align: left;
+    flex-direction: column;
+  }
+  #service .col-lg-6 h2 {
+    font-size: 25px !important;
+  }
+  #special {
+    padding: 0px 30px;
+  }
+  #special .special {
+    height: 250px !important;
+  }
+  #testimonials .test-head h2 {
+    font-size: 15px !important;
+  }
+  #testimonials .test-head::before {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: -100px !important;
+  }
+  #testimonials .test-head::after {
+    height: 600% !important;
+  }
+  #testimonials .col-lg-7 {
+    padding: 0px 15px !important;
+  }
+  footer #contacts .foot-col-1 .col-2.foot {
+    padding-right: 0px !important;
+    padding-left: 20px !important;
+  }
+  footer #the-end .end-icon-1 {
+    margin: 0px 2px !important;
+  }
+  footer #the-end .end-icon-2 {
+    margin: 0px 2px !important;
+  }
+  footer #the-end .end-icon-3 {
+    margin: 0px 2px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

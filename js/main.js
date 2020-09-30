@@ -12,12 +12,23 @@ window.addEventListener("scroll", function () {
     mobileMenu.classList.remove("mob-fixed");
   }
 });
-
+// toogle menu
 $(document).ready(function () {
-  $(".nav-button i").click(function () {
-    $(".mobile-menu").slideToggle(400);
+  $(".nav-button ").click(function () {
+   $(".mobile-menu").slideToggle(400);
+    if ($(".nav-button i").hasClass("fa-bars")) {
+      $(".nav-button i").removeClass("fa-bars");
+      $(".nav-button i").addClass("fa-times");
+
+    }
+    else {
+      $(".nav-button i").removeClass("fa-times");
+      $(".nav-button i").addClass("fa-bars");
+      
+    }
   });
 });
+// toggle-menu
 // MOBILE-MENU-DROPDOWN
 let dropButton = document.querySelectorAll(".dropbtn");
 dropButton.forEach((e) => {
@@ -36,7 +47,7 @@ $(".owl-carousel.myowl").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: true,
+      
     },
     600: {
       items: 1,
@@ -56,7 +67,7 @@ $(document).ready(function () {
   $(".owl-carousel.owl-theme").owlCarousel();
 });
 $(".owl-carousel.owl-theme").owlCarousel({
-  margin: 27,
+  margin: 20,
 
   responsive: {
     0: {
@@ -70,5 +81,18 @@ $(".owl-carousel.owl-theme").owlCarousel({
     },
   },
 });
+// appointment dropdown
+function appointDrDown() {
+  $(".items1").click(function () {
+    $(".items1").removeClass("selected-option");
+    $(this).addClass("selected-option");
+    $(this).parent().prev().text($(this).text());
+  });
+  $(".items2").click(function () {
+    $(".items2").removeClass("selected-option");
+    $(this).addClass("selected-option");
+    $(this).parent().prev().text($(this).text());
+  });
+}
+appointDrDown();
 
-AOS.init();
