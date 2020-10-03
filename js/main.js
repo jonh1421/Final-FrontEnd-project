@@ -2,11 +2,11 @@
 let nav = document.querySelector("nav");
 let linkHover = document.querySelector(".link-hover");
 let link = document.querySelector(".link");
- let mobileMenu = document.querySelector(".mobile-menu");
+let mobileMenu = document.querySelector(".mobile-menu");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 60) {
     nav.classList.add("fixed");
-    mobileMenu.classList.add("mob-fixed")
+    mobileMenu.classList.add("mob-fixed");
   } else {
     nav.classList.remove("fixed");
     mobileMenu.classList.remove("mob-fixed");
@@ -15,19 +15,14 @@ window.addEventListener("scroll", function () {
 // toogle menu
 
 $(document).ready(function () {
-
-
   $(".nav-button ").click(function () {
-   $(".mobile-menu").slideToggle(400);
+    $(".mobile-menu").slideToggle(400);
     if ($(".nav-button i").hasClass("fa-bars")) {
       $(".nav-button i").removeClass("fa-bars");
       $(".nav-button i").addClass("fa-times");
-
-    }
-    else {
+    } else {
       $(".nav-button i").removeClass("fa-times");
       $(".nav-button i").addClass("fa-bars");
-      
     }
   });
 });
@@ -51,7 +46,6 @@ $(".owl-carousel.myowl").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      
     },
     600: {
       items: 1,
@@ -67,6 +61,7 @@ $(".owl-carousel.myowl").owlCarousel({
   },
 });
 // owl-theme
+
 $(document).ready(function () {
   $(".owl-carousel.owl-theme").owlCarousel();
 });
@@ -100,32 +95,40 @@ function appointDrDown() {
 }
 appointDrDown();
 
-
 // Count up START
-$(".timer").each(function () {
-  var $this = $(this),
-    countTo = $this.attr("data-count");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 450) {
+    $(".timer").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-count");
 
-  $({ countNum: $this.text() }).animate(
-    {
-      countNum: countTo,
-    },
+      $({ countNum: $this.text() }).animate(
+        {
+          countNum: countTo,
+        },
 
-    {
-      duration: 6000,
-      easing: "linear",
-      step: function () {
-        $this.html((Math.floor(this.countNum) + '<i class="fas fa-plus"></i>'));
-      },
-      complete: function () {
-        $this.html(this.countNum + '<i class="fas fa-plus"></i>');
-        //alert('finished');
-      },
-    }
-  );
+        {
+          duration: 5000,
+          easing: "linear",
+          step: function () {
+            $this.html(
+              Math.floor(this.countNum) + '<i class="fas fa-plus"></i>'
+            );
+          },
+          complete: function () {
+            $this.html(this.countNum + '<i class="fas fa-plus"></i>');
+            //alert('finished');
+          },
+        }
+      );
+    });
+  } else {
+  }
 });
+
 // Count up end
 
+// preloader
 setTimeout(() => {
   $(".preloader").removeClass("active");
 }, 1500);
