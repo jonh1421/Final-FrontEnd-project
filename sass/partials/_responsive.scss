@@ -92,6 +92,19 @@
   #emergency {
     padding: 40px 0px !important;
   }
+
+  #home {
+    .carousel-inner {
+      .layer {
+        .text {
+          margin-top: 50px !important;
+          h1 {
+            font-size: 60px !important;
+          }
+        }
+      }
+    }
+  }
   #service {
     .col-lg-6 {
       margin-bottom: 40px;
@@ -234,11 +247,32 @@
       display: none !important;
     }
   }
+  #home {
+    .carousel-inner {
+      .layer {
+        .text {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-top: 50px !important;
+          h1 {
+            font-size: 50px !important;
+          }
+          .fa-heartbeat {
+            top: 0px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            font-size: 100px !important;
+          }
+        }
+      }
+    }
+  }
 
   // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
   #emergency {
     padding: 20px 0px !important;
-    .emer-img{
+    .emer-img {
       display: none !important;
     }
   }
@@ -253,11 +287,16 @@
         padding: 0px !important;
       }
     }
-    .col-lg-6{
-        padding-left: 15px !important;
+    .col-lg-6 {
+      padding-left: 15px !important;
     }
   }
-
+  #blog-single {
+    .post-tags {
+      flex-direction: column !important;
+      justify-content: center;
+    }
+  }
   // SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL
   #special {
     padding: 0px 50px;
@@ -317,7 +356,26 @@
       }
     }
   }
-
+  #home {
+    .carousel-inner {
+      .layer {
+        .text {
+          h4 {
+            font-size: 16px;
+          }
+          margin-top: 18px !important;
+          h1 {
+            font-size: 38px !important;
+          }
+          .btn {
+            font-size: 14px;
+            padding: 4px 0px;
+            width: 180px !important;
+          }
+        }
+      }
+    }
+  }
   // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
   #emergency {
     .emer-img {
@@ -332,7 +390,7 @@
     }
   }
   #appointment {
-    .appoinment-box{
+    .appoinment-box {
       .app-absolute {
         position: relative !important;
       }
@@ -361,13 +419,13 @@
       }
     }
     .col-lg-6 {
-      .info{
+      .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-self: center;
         text-align: center;
-        ul{
+        ul {
           text-align: left;
           flex-direction: column;
         }
@@ -410,13 +468,13 @@
 
   // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
   footer {
-    #contacts{
-     .foot-col-1{
-       .col-2.foot  {
-       padding-right: 0px !important;
-       padding-left: 20px !important;
-     }
-     }
+    #contacts {
+      .foot-col-1 {
+        .col-2.foot {
+          padding-right: 0px !important;
+          padding-left: 20px !important;
+        }
+      }
     }
     #the-end {
       .end-icon-1 {
@@ -430,8 +488,75 @@
       }
     }
   }
+  #blog-single {
+    
+    .comments-title {
+      h5 {
+        text-align: center;
+      }
+    }
+    .commen-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px !important;
+      .content {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
-// @media screen and (max-width: 992px) and (min-width: 768px) {
+// responsive 450
+@media only screen and (max-width: 450px) {
+  #blog-single {
+    .post-pagi-area {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        width: max-content;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
 
- 
-// }
+// responsive 350
+@media only screen and (max-width: 350px) {
+  #home {
+    #carouselExampleInterval {
+      .carousel-inner {
+        .layer {
+          img {
+            object-fit: contain !important;
+          }
+          .text {
+            margin-top: 10px !important;
+            h4 {
+              font-size: 14px !important;
+            }
+            h1 {
+              font-size: 22px !important;
+            }
+
+            .btn {
+              font-size: 14px;
+              padding: 4px 0px;
+              width: 180px !important;
+            }
+            .fa-heartbeat {
+              font-size: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

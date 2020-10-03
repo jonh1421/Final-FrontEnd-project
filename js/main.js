@@ -13,7 +13,10 @@ window.addEventListener("scroll", function () {
   }
 });
 // toogle menu
+
 $(document).ready(function () {
+
+
   $(".nav-button ").click(function () {
    $(".mobile-menu").slideToggle(400);
     if ($(".nav-button i").hasClass("fa-bars")) {
@@ -37,6 +40,7 @@ dropButton.forEach((e) => {
   });
 });
 // NAV-MOBILE-MENU-TOGGLE-END
+// my owl
 $(".owl-carousel.myowl").owlCarousel({
   loop: true,
   margin: 0,
@@ -62,7 +66,7 @@ $(".owl-carousel.myowl").owlCarousel({
     },
   },
 });
-
+// owl-theme
 $(document).ready(function () {
   $(".owl-carousel.owl-theme").owlCarousel();
 });
@@ -81,7 +85,7 @@ $(".owl-carousel.owl-theme").owlCarousel({
     },
   },
 });
-// appointment dropdown
+// Appointment dropdown
 function appointDrDown() {
   $(".items1").click(function () {
     $(".items1").removeClass("selected-option");
@@ -96,3 +100,32 @@ function appointDrDown() {
 }
 appointDrDown();
 
+
+// Count up START
+$(".timer").each(function () {
+  var $this = $(this),
+    countTo = $this.attr("data-count");
+
+  $({ countNum: $this.text() }).animate(
+    {
+      countNum: countTo,
+    },
+
+    {
+      duration: 6000,
+      easing: "linear",
+      step: function () {
+        $this.html((Math.floor(this.countNum) + '<i class="fas fa-plus"></i>'));
+      },
+      complete: function () {
+        $this.html(this.countNum + '<i class="fas fa-plus"></i>');
+        //alert('finished');
+      },
+    }
+  );
+});
+// Count up end
+
+setTimeout(() => {
+  $(".preloader").removeClass("active");
+}, 1500);

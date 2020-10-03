@@ -25,7 +25,12 @@
   </head>
 
   <body>
-    <header>
+    <!-- preloader -->
+    <div class="preloader active">
+      <img src="img/preloader.gif" alt="" />
+    </div>
+    <!-- preloader end -->
+   <header>
       <!--*********************** HEADER-HEAD-START ************************ Covid 19 *** -->
       <div class="header-head">
         <div class="container">
@@ -84,9 +89,9 @@
                   >PAGES <i class="fas fa-angle-down"></i
                 ></a>
                 <ul class="link-hover link-pages-hover">
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">About Us</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="about.html">About Us</a></li>
                 </ul>
               </div>
 
@@ -131,9 +136,9 @@
                   <li><a href="blog-grid.html">Blog Grid Three Colum</a></li>
                   <li><a href="blog-grid.html">Blog Grid Three Colum</a></li>
                   <li><a href="blog-grid.html">Blog Grid Three Colum</a></li>
-                  <li><a href="">Blog Single With Sidebar </a></li>
-                  <li><a href="">Blog Single With Sidebar</a></li>
-                  <li><a href="">Blog Single With Sidebar</a></li>
+                  <li><a href="blog-single.html">Blog Single With Sidebar </a></li>
+                  <li><a href="blog-single.html">Blog Single With Sidebar</a></li>
+                  <li><a href="blog-single.html">Blog Single With Sidebar</a></li>
                 </ul>
               </div>
               <a class="link nav-link link-contact" href="contact.html"
@@ -179,9 +184,9 @@
                 <i class="fas fa-angle-down mr-3"></i>
               </div>
               <ul class="drop-menu">
-                <li class="my-2"><a href="">About Us</a></li>
-                <li class="my-2"><a href="">Get in Touch</a></li>
-                <li class="my-2"><a href="">Error Page</a></li>
+                <li class="my-2"><a href="about.html">About Us</a></li>
+                <li class="my-2"><a href="about.html">About Us</a></li>
+                <li class="my-2"><a href="about.html">About Us</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -192,10 +197,18 @@
                 <i class="fas fa-angle-down mr-3"></i>
               </div>
               <ul class="drop-menu">
-                <li class="my-2"><a href="">Departments Version One</a></li>
-                <li class="my-2"><a href="">Departments Version Two</a></li>
-                <li class="my-2"><a href="">Departments Version Three</a></li>
-                <li class="my-2"><a href="">Departments Version Four</a></li>
+                <li class="my-2">
+                  <a href="departments.html">Departments Version One</a>
+                </li>
+                <li class="my-2">
+                  <a href="departments.html">Departments Version One</a>
+                </li>
+                <li class="my-2">
+                  <a href="departments.html">Departments Version One</a>
+                </li>
+                <li class="my-2">
+                  <a href="departments.html">Departments Version One</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -211,7 +224,7 @@
                   <a href="doctors.html">Doctors Version One</a>
                 </li>
                 <li class="my-2">
-                  <a href="doctors.html">Doctors Version Two</a>
+                  <a href="doctors.html">Doctors Version One</a>
                 </li>
               </ul>
             </li>
@@ -225,13 +238,13 @@
               </div>
               <ul class="drop-menu">
                 <li class="my-2">
-                  <a href="blog-grid.html">Blog Grid Two Colum<</a>
+                  <a href="blog-grid.html">Blog Grid Three Colum<</a>
                 </li>
                 <li class="my-2">
-                  <a href="blog-grid.html">Blog Grid Two Colum</a>
+                  <a href="blog-grid.html">Blog Grid Three Colum</a>
                 </li>
-                <li class="my-2"><a href="">Blog Single With Sidebar</a></li>
-                <li class="my-2"><a href="">Blog Single With Sidebar</a></li>
+                <li class="my-2"><a href="blog-single.html">Blog Single With Sidebar</a></li>
+                <li class="my-2"><a href="blog-single.html">Blog Single With Sidebar</a></li>
               </ul>
             </li>
             <li>
@@ -284,7 +297,9 @@
                 <img class="img-fluid" src="img/owlcarusel/abour.jpg" alt="" />
                 <div class="modalIntro">
                   <div class="video mr-3">
-                    <a href="https://www.youtube.com/watch?v=5vY-D42NFP4">
+                    <a class="youtube-video"
+                    data-toggle="modal"
+                    data-target="#videomodal">
                       <i class="fas fa-play"></i>
                     </a>
                   </div>
@@ -295,6 +310,7 @@
                       coming
                     </p>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -386,7 +402,7 @@
                       class="info-sec d-flex justify-content-center align-items-center flex-column"
                     >
                       <h4>
-                        <a href="#">Body Surgery</a>
+                        <a href="#">Dental Care</a>
                       </h4>
                       <div class="icon-sec">
                         <i class="fas fa-tooth"></i>
@@ -408,7 +424,7 @@
                       class="info-sec d-flex justify-content-center align-items-center flex-column"
                     >
                       <h4>
-                        <a href="#">Body Surgery</a>
+                        <a href="#">Eye Care</a>
                       </h4>
                       <div class="icon-sec">
                         <i class="far fa-eye"></i>
@@ -474,6 +490,23 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade" id="videomodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+      
+          </div>
+        </div>
+      </div>
 
       <section id="special" style="overflow: hidden">
         <div class="container-fluid con p-0">
