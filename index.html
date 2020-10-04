@@ -26,7 +26,6 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/animate.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -35,14 +34,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- preloader -->
-    <div class="preloader active">
+    <!--******************* PREOLADER **********************-->
+    <!-- <div class="preloader active">
       <img src="img/preloader.gif" alt="" />
-    </div>
-    <!-- preloader end -->
+    </div> -->
+    <!--****************** PREOLADER-END *******************-->
+
     <!--****************** HEADER START *******************-->
     <header>
       <!--*********************** HEADER-HEAD-START ************************ Covid 19 *** -->
@@ -151,13 +152,13 @@
                   <li><a href="blog-grid.html">Blog Grid Three Colum</a></li>
                   <li><a href="blog-grid.html">Blog Grid Three Colum</a></li>
                   <li>
-                    <a href="blog-single.html">Blog Single  </a>
+                    <a href="blog-single.html">Blog Single </a>
                   </li>
                   <li>
                     <a href="blog-single.html">Blog Single </a>
                   </li>
                   <li>
-                    <a href="blog-single.html">Blog Single /a>
+                    <a href="blog-single.html">Blog Single </a>
                   </li>
                 </ul>
               </div>
@@ -284,6 +285,7 @@
       <!--******************* NAV END ******************-->
     </header>
     <!--********************* HEADER END *********************-->
+
     <main>
       <!--**************** HOME-SECTION-START ****************-->
       <section id="home" style="overflow: hidden">
@@ -298,7 +300,7 @@
               <div class="layer">
                 <div class="container">
                   <div class="row">
-                    <div class="col-lg-9 ">
+                    <div class="col-lg-9">
                       <div class="text d-flex flex-column">
                         <i class="fas fa-heartbeat"></i>
                         <h4 class="animate__animated animate__fadeInDownBig">
@@ -330,7 +332,9 @@
                         </h4>
                         <h1 class="animate__animated animate__fadeInRight">
                           Meet the
-                          <strong class="font-weight-bold">Best Hospital</strong>
+                          <strong class="font-weight-bold"
+                            >Best Hospital</strong
+                          >
                         </h1>
                         <a class="btn mybtn" href="">
                           <i class="fas fa-angle-right mr-3"></i>Make Appoinment
@@ -423,9 +427,9 @@
       <!--*************** EMEREGENCY-SECTION-END *******************-->
       <!-- ********************************************************* -->
       <!--**************** SERVICE-SECTION-START ****************-->
-      <section id="service" class="sec-pad-y" style="overflow: hidden">
+      <section id="service" class="sec-pad-y" >
         <div class="shape">
-          <img src="img/shape/shape1.png" alt="" />
+          <img class="img-fluid" src="img/shape/shape1.png" alt="" />
         </div>
         <div class="shape-bottom">
           <img class="img-fluid" src="img/shape/shape3.png" alt="" />
@@ -471,13 +475,13 @@
                   general.
                 </p>
 
-                <ul class="d-flex justify-content-between">
-                  <li>
-                    <i class="far fa-calendar-plus"></i>
+                <ul class="d-flex ">
+                  <li class="mr-5">
+                    <i class="far fa-calendar-plus mr-3" ></i>
                     <a href=""> Online Appoinment </a>
                   </li>
-                  <li>
-                    <i class="far fa-calendar-plus"></i>
+                  <li >
+                    <i class="far fa-calendar-plus mr-3"></i>
                     <a href=""> Health Queries </a>
                   </li>
                 </ul>
@@ -608,7 +612,7 @@
           </div>
         </div>
       </section>
-
+      <!-- ****************VIDEO-MODAL-START *******************-->
       <div
         class="modal fade"
         id="videomodal"
@@ -638,8 +642,7 @@
           </div>
         </div>
       </div>
-
-      <!-- end video modal -->
+      <!-- ****************VIDEO-MODAL-START *******************-->
       <!--*************** SERVICE-SECTION-END *******************-->
       <!-- ********************************************************* -->
 
@@ -688,8 +691,8 @@
             </div>
             <div class="col-lg-5">
               <div
-                class="appoinment-box d-flex flex-column justify-content-center align-items-center"
-                style="overflow: hidden"
+                class="appoinment-box d-flex flex-column justify-content-center align-items-center animated "
+                style="visibility: visible; "
               >
                 <div class="app-absolute"></div>
                 <div
@@ -699,7 +702,7 @@
                   <img src="img/appoint.png" alt="" />
                 </div>
                 <!--***************** APPOINTMENT-FORM-START *******************-->
-                <form action="#">
+                <form action="http://jrc.azgpeng.com">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
@@ -917,7 +920,7 @@
             <!--********* BUTTONS-END *************-->
             <!--********* CONTENT-START *************-->
             <div class="col-lg-8">
-              <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-content animated" id="v-pills-tabContent" >
                 <!-- ********CONTENT-COL-START ***************-->
                 <div
                   class="tab-pane fade show active"
@@ -1130,6 +1133,7 @@
       </section>
       <!--****************** TESTIMONIALS-SECTION-END ****************************-->
 
+      <!--****************** BLOG-SECTION-START ****************************-->
       <section id="blog">
         <div class="container">
           <div
@@ -1232,13 +1236,15 @@
           </div>
         </div>
       </section>
+      <!--****************** BLOG-SECTION-END ****************************-->
+
       <!--******************* CONTACT-SECTION-START ******************************-->
       <section id="contact" class="sec-pad-y">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7" >
               <div
-                class="contact-info d-flex justify-content-center align-items-center"
+                class="contact-info d-flex justify-content-center align-items-center animated"
               >
                 <div class="contact-info-item mr-5">
                   <h6>
@@ -1257,67 +1263,43 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <h2>Need help? <strong>Let's ask your questions</strong></h2>
-              <!--**************** contact-form-start *********************-->
-              <form
-                action="assets/mail/contact.php"
-                method="POST"
-                class="contact-form"
-              >
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Name"
-                        type="text"
-                      />
-                      <span class="alert-error"></span>
+              <div class="con-form animated " id="forAnime">
+                <h2>Need help? <strong>Let's ask your questions</strong></h2>
+                <!--**************** contact-form-start *********************-->
+                <form action="http://jrc.azgpeng.com">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" />
+                        <span class="alert-error"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required />
+                        <span class="alert-error"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" />
+                        <span class="alert-error"></span>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group comments">
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"
+                          required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <button type="submit" name="submit" id="submit">
+                        Send Message
+                      </button>
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Email*"
-                        type="email"
-                      />
-                      <span class="alert-error"></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input
-                        class="form-control"
-                        id="phone"
-                        name="phone"
-                        placeholder="Phone"
-                        type="text"
-                      />
-                      <span class="alert-error"></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-group comments">
-                      <textarea
-                        class="form-control"
-                        id="comments"
-                        name="comments"
-                        placeholder="Tell Us About Project *"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <button type="submit" name="submit" id="submit">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
               <!--************  contact-form-end **************-->
             </div>
           </div>

@@ -2,7 +2,7 @@
 // 1200 * 1200 * 1200 * 1200 * RESPONSIVE 1200 * 1200 * 1200 * 1200
 // 1200 * 1200 * 1200 * 1200 * RESPONSIVE 1200 * 1200 * 1200 * 1200
 @media only screen and (max-width: 1200px) {
-  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  // HEADER 1200 * HEADER 1200 * HEADER 1200 * HEADER 1200 * 
   .header-head {
     .head-first {
       p {
@@ -26,7 +26,7 @@
     padding: 20px 0px;
   }
 
-  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  // DOCTORS 1200 * DOCTORS  1200 * DOCTORS 1200 * DOCTORS 1200 * 
   #doctors {
     .tab-pane {
       .col-lg-6 {
@@ -39,7 +39,7 @@
     }
   }
 
-  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  // TESTIMONIALS 1200 * TESTIMONIALS 1200 * TESTIMONIALS 1200 * 
   #testimonials {
     .test-head {
       &::before {
@@ -57,11 +57,12 @@
     }
   }
 }
+
 // 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
 // 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
 // 1023 * 1023 * 1023 * 1023 * RESPONSIVE 1023 * 1023 * 1023 * 1023
 @media only screen and (max-width: 1023px) {
-  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  // HEADER 1023 * HEADER 1023 * HEADER 1023 * HEADER 1023 * HEADER 1023* 
   nav {
     height: auto !important;
     .navbar-brand {
@@ -84,15 +85,13 @@
     }
   }
 }
+
 // 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
 // 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
 // 992 * 992 * 992 * 992 * RESPONSIVE 992 * 992 * 992 * 992
 @media only screen and (max-width: 992px) {
-  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
-  #emergency {
-    padding: 40px 0px !important;
-  }
-
+  
+// * HOME 992 * HOME 992 * HOME 992 * HOME 992  HOME 992 * HOME 992 
   #home {
     .carousel-inner {
       .layer {
@@ -105,6 +104,8 @@
       }
     }
   }
+
+  // SERVICE 992  * SERVICE 992 * SERVICE 992 * SERVICE 992 * SERVICE 992 *  
   #service {
     .col-lg-6 {
       margin-bottom: 40px;
@@ -114,11 +115,19 @@
         bottom: 0px !important;
       }
     }
-  }
-  // APPOINTMENT *  APPOINTMENT *  APPOINTMENT *  APPOINTMENT
+  } 
+
+  // APPOINTMENT 992 *  APPOINTMENT 992 * APPOINTMENT 992 * APPOINTMENT 992 * 
   #appointment {
     padding: 40px 0px !important;
   }
+
+  //  EMERGENCY 992 * EMERGENCY 992 EMERGENCY 992 * EMERGENCY 992
+  #emergency {
+    padding: 40px 0px !important;
+  }
+
+  // SPECIAL 992 * SPECIAL 992 * SPECIAL 992 * SPECIAL 992 * SPECIAL 992 * 
   #special {
     padding: 0px 90px;
     .special {
@@ -136,7 +145,7 @@
     }
   }
 
-  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  // DOCTORS 992 * DOCTORS 992 * DOCTORS 992 * DOCTORS 992 * DOCTORS 992* 
   #doctors {
     .nav {
       flex-direction: row !important;
@@ -168,7 +177,7 @@
     }
   }
 
-  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  // TESTIMONIALS 992 * TESTIMONIALS 992* TESTIMONIALS 992* TESTIMONIALS 992*
   #testimonials {
     .test-head {
       padding-left: 0px !important;
@@ -189,7 +198,7 @@
     }
   }
 
-  // CONTACT * CONTACT * CONTACT * CONTACT * CONTACT
+  // CONTACT 992 * CONTACT 992* CONTACT 992* CONTACT 991* CONTACT 992*
   #contact {
     .col-lg-7 {
       .contact-info {
@@ -207,7 +216,7 @@
     }
   }
 
-  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  // FOOTER 992* FOOTER 992* FOOTER 992* FOOTER 992* FOOTER 992* FOOTER 992*
   footer {
     #the-end {
       .end-col-1 {
@@ -221,11 +230,12 @@
     }
   }
 }
+
 // 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
 // 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
 // 767 * 767 * 767 * 767 * RESPONSIVE 767 * 767 * 767 * 767
 @media only screen and (max-width: 767px) {
-  // HEADER * HEADER * HEADER * HEADER * HEADER * HEADER
+  // HEADER 767 * HEADER 767 * HEADER 767* HEADER 767* HEADER 767* 
   .header-head {
     display: none;
   }
@@ -247,6 +257,8 @@
       display: none !important;
     }
   }
+
+  // HOME 767 * HOME 767 * HOME 767 * HOME 767 * HOME 767 * 
   #home {
     .carousel-inner {
       .layer {
@@ -269,7 +281,7 @@
     }
   }
 
-  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
+  // EMERGENCY 767 * EMERGENCY 767* EMERGENCY 767* EMERGENCY 767*
   #emergency {
     padding: 20px 0px !important;
     .emer-img {
@@ -277,10 +289,12 @@
     }
   }
 
-  // APPOINTMENT *  APPOINTMENT *  APPOINTMENT *  APPOINTMENT
+  // APPOINTMENT 767*  APPOINTMENT 767*  APPOINTMENT 767*  APPOINTMENT 767*
   #appointment {
     padding: 20px 0px !important;
   }
+
+  // SERVICE 767 *SERVICE * SERVICE 767 * SERVICE 767 * SERVICE 767 *
   #service {
     .col-lg-6 {
       .img-shape {
@@ -291,18 +305,21 @@
       padding-left: 15px !important;
     }
   }
+
+  // BLOG-SINGLE 767 * BLOG-SINGLE 767 * BLOG-SINGLE 767 * BLOG-SINGLE 767 *
   #blog-single {
     .post-tags {
       flex-direction: column !important;
       justify-content: center;
     }
   }
-  // SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL
+
+  // SPECIAL 767 * SPECIAL 767 * SPECIAL 767 * SPECIAL 767 * SPECIAL 767 * 
   #special {
     padding: 0px 50px;
   }
 
-  // DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS * DOCTORS
+  // DOCTORS 767 * DOCTORS 767 * DOCTORS 767 * DOCTORS 767 * DOCTORS 767 * 
   #doctors {
     .nav {
       flex-direction: column !important;
@@ -313,14 +330,14 @@
     }
   }
 
-  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  // TESTIMONIALS 767 * TESTIMONIALS 767 * TESTIMONIALS 767 * TESTIMONIALS
   #testimonials {
     .col-lg-7 {
       padding: 0px 60px !important;
     }
   }
 
-  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  // FOOTER 767* FOOTER 767 * FOOTER  767* FOOTER  767* FOOTER 767 * FOOTER
   footer {
     #contacts {
       .foot-col-2 {
@@ -343,6 +360,7 @@
 // 577 * 577 * 577 * 577 * RESPONSIVE 577 * 577 * 577 * 577
 // 577 * 577 * 577 * 577 * RESPONSIVE 577 * 577 * 577 * 577
 @media only screen and (max-width: 577px) {
+  // HEADER 577 * HEADER 577 * HEADER 577 * HEADER 577 * HEADER 577 
   nav {
     height: auto !important;
     .navbar-brand {
@@ -356,6 +374,8 @@
       }
     }
   }
+
+// HOME 577 * HOME 577 * HOME 577 *HOME 577 * HOME 577 * HOME 577 *
   #home {
     .carousel-inner {
       .layer {
@@ -376,7 +396,9 @@
       }
     }
   }
-  // EMERGENCY * EMERGENCY * EMERGENCY * EMERGENCY
+
+
+  // EMERGENCY  577* EMERGENCY  577* EMERGENCY 577 * EMERGENCY 577
   #emergency {
     .emer-img {
       &::before {
@@ -389,6 +411,8 @@
       }
     }
   }
+
+// APPOINTMENT 577 * APPOINTMENT 577 * APPOINTMENT 577 * APPOINTMENT 577 
   #appointment {
     .appoinment-box {
       .app-absolute {
@@ -396,7 +420,14 @@
       }
     }
   }
+
+// SERVICE 577 *  SERVICE 577 * SERVICE 577 * SERVICE 577 * SERVICE 577 *
   #service {
+    .shape-bottom{
+      img{
+        opacity: 0 !important;
+      }
+    }
     .col-lg-6 {
       padding-right: 15 !important;
       margin-bottom: 40px;
@@ -406,6 +437,11 @@
         left: 0 !important;
         bottom: -20px !important;
         padding: 50px 30px !important;
+        .video{
+          a{
+            margin-bottom: 20px;
+          }
+        }
         .content {
           display: flex;
           flex-direction: column;
@@ -428,6 +464,12 @@
         ul {
           text-align: left;
           flex-direction: column;
+          i{
+            margin-right: 0px !important;
+          }
+          a{
+            font-size: 17px !important;
+          }
         }
       }
       padding-right: 15px !important;
@@ -436,7 +478,8 @@
       }
     }
   }
-  // SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL * SPECIAL
+
+ // SPECIAL 577 * SPECIAL 577 * SPECIAL 577 * SPECIAL 577* SPECIAL 577* 
   #special {
     padding: 0px 30px;
     .special {
@@ -444,7 +487,7 @@
     }
   }
 
-  // TESTIMONIALS * TESTIMONIALS * TESTIMONIALS * TESTIMONIALS
+  // TESTIMONIALS 577 * TESTIMONIALS 577 * TESTIMONIALS 577 * 
   #testimonials {
     .test-head {
       h2 {
@@ -466,7 +509,7 @@
     }
   }
 
-  // FOOTER * FOOTER * FOOTER * FOOTER * FOOTER * FOOTER
+  // FOOTER 577 * FOOTER 577 * FOOTER 577 * FOOTER 577* FOOTER 577 * 
   footer {
     #contacts {
       .foot-col-1 {
@@ -488,6 +531,7 @@
       }
     }
   }
+// BLOG-SINGLE 577 * BLOG-SINGLE 577 * BLOG-SINGLE 577 * 
   #blog-single {
     
     .comments-title {
@@ -513,8 +557,11 @@
     }
   }
 }
-// responsive 450
+// 450 * 450 * 450 * 450 * RESPONSIVE 450 * 450 * 450 * 450
+// 450 * 450 * 450 * 450 * RESPONSIVE 450 * 450 * 450 * 450
+// 450 * 450 * 450 * 450 * RESPONSIVE 450 * 450 * 450 * 450
 @media only screen and (max-width: 450px) {
+  // BLOG-SINGLE 450 * BLOG-SINGLE 450 * BLOG-SINGLE 450 * 
   #blog-single {
     .post-pagi-area {
       flex-direction: column;
@@ -526,10 +573,18 @@
       }
     }
   }
+  #special{
+    .spec-info{
+      padding: 20px !important;
+    }
+  }
 }
 
-// responsive 350
+// 350 * 350 * 350 * 350 * RESPONSIVE 350 * 350 * 350 * 350
+// 350 * 350 * 350 * 350 * RESPONSIVE 350 * 350 * 350 * 350
+// 350 * 350 * 350 * 350 * RESPONSIVE 350 * 350 * 350 * 350
 @media only screen and (max-width: 350px) {
+  // HOME 350 * HOME 350 * HOME 350 * HOME 350 * HOME 350 *
   #home {
     #carouselExampleInterval {
       .carousel-inner {

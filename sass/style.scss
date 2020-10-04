@@ -1,7 +1,18 @@
 @import "partials/variables";
-
 @import "partials/vip";
-@import "partials/pages";
+@import "partials/pages";                                  
+// ---------------------------START------------END           VIDEOMODAL
+// HEADER---------------------19---------------234           PRELOADER
+// HOME-SECTION---------------241--------------357           BG-COLOR-SEC
+// EMERGENCY-SECTION----------363--------------413           BLOG-SINGLE-SEC
+// SERVICE-SECTION------------420--------------877           COUNT-SEC
+// APPOINTMENT-SECTION--------884--------------1054             \\//
+// SPECIAL-SECTION------------1061-------------1123              \/
+// D0CTORS-SECTION------------1130-------------1307    /SASS/PARTIALS/PAGES
+// TESTIMONIALS-SECTION-------1313-------------1475         ************
+// BLOG-GRID-SECTION----------1482-------------1662          RESPONSIVE
+// CONTACT-SECTION------------1668-------------1792              \/
+// FOOTER-SECTION-------------1798-------------1833  /SASS/PARTIALS/RESPONSIVE
 
 // ******************* HEADER START ***************
 
@@ -221,8 +232,8 @@ header {
 
   //************ MOBILE NAV END ***************
 }
+//************** HEADER END *********************
 
-//************** NAV END *********************
 // SECTION * SECTION * SECTION * SECTION * SECTION
 
 //************ HOME_SECTION_START ***************
@@ -262,19 +273,20 @@ header {
   }
   .carousel-item {
     position: relative;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
-      
+
       transition: all 3s ease-in-out;
-      animation: zoom 20s;
+      animation: zoom 40s;
     }
     @keyframes zoom {
       from {
-        transform: scale(1, 1);
+        transform: scale(1);
       }
       to {
-        transform: scale(1.5, 1.5);
+        transform: scale(1.5);
       }
     }
 
@@ -288,7 +300,7 @@ header {
 
       .text {
         margin-top: 200px;
-        
+
         position: relative;
         .fa-heartbeat {
           position: absolute;
@@ -336,12 +348,13 @@ header {
       }
     }
   }
-}
-#carouselExampleInterval {
-  .carousel-inner {
-   max-height: 650px !important;
+  #carouselExampleInterval {
+    .carousel-inner {
+      max-height: 650px !important;
+    }
   }
 }
+
 //*********** HOME-SECTION-END ***************
 
 // SECTION * SECTION * SECTION * SECTION * SECTION
@@ -414,7 +427,7 @@ header {
       right: 0;
       width: 100%;
       opacity: 0.1;
-      bottom: 0;
+      bottom: -113px;
     }
   }
 
@@ -444,14 +457,12 @@ header {
             width: 500px !important;
             height: 700px !important;
           }
-          .modal-dialog {
-          }
 
           position: absolute;
           right: 0;
-          bottom: -50px;
+          bottom: -20px;
           background: #ffffff;
-          padding: 0px 30px;
+          padding-left: 30px;
           left: 120px;
           box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.08);
           display: flex;
@@ -529,7 +540,7 @@ header {
         ul {
           padding: 0px;
           li {
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             list-style-type: none;
 
             i {
@@ -873,6 +884,9 @@ header {
 #appointment {
   .col-lg-7 {
     padding: 50px 50px;
+    h2 {
+      color: $black;
+    }
     .app-text {
       font-size: 14px;
       color: $grey;
@@ -898,7 +912,7 @@ header {
       z-index: 1;
       .app-absolute {
         position: absolute;
-        left: -15px;
+        left: -30px;
         top: -25px;
         height: 100%;
         width: 100%;
@@ -1076,6 +1090,9 @@ header {
       h5 {
         color: $primary-color;
       }
+      h2 {
+        color: $black;
+      }
       p {
         font-size: 14px;
         color: $grey;
@@ -1117,6 +1134,7 @@ header {
       color: $primary-color;
     }
     h3 {
+      color: $black;
       &::before {
         background: #1ebeb6 none repeat scroll 0 0;
         bottom: 0;
@@ -1191,6 +1209,9 @@ header {
           font-size: 14px !important;
           color: $grey;
           line-height: 25px;
+        }
+        h5 {
+          color: $black;
         }
 
         a {
@@ -1561,6 +1582,7 @@ header {
       }
       h5 {
         cursor: pointer;
+        color: $black;
         &:hover {
           color: $primary-color;
           transition: 0.4s;
@@ -1677,6 +1699,7 @@ header {
     h2 {
       font-weight: 600;
       margin-bottom: 20px;
+      color: $black;
       strong {
         display: block;
         color: #1ebeb6;
@@ -1810,4 +1833,7 @@ footer {
 }
 // **************** footer -section-2-end *****************
 //******************* footer end ************************
+@import "partials/animate";
 @import "partials/responsive";
+
+

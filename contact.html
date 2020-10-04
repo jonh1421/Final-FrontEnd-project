@@ -24,11 +24,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- preloader -->
+    <!--************************* PRELOADER *********************-->
     <div class="preloader active">
       <img src="img/preloader.gif" alt="" />
     </div>
-    <!-- preloader end -->
+    <!--************************* PRELOADER END *********************-->
+
+    <!-- ************************ HEADER-START **********-->
     <header>
       <!--*********************** HEADER-HEAD-START ************************ Covid 19 *** -->
       <div class="header-head">
@@ -242,8 +244,12 @@
                 <li class="my-2">
                   <a href="blog-grid.html">Blog Grid Three Colum</a>
                 </li>
-                <li class="my-2"><a href="blog-single.html">Blog Single </a></li>
-                <li class="my-2"><a href="blog-single.html">Blog Single </a></li>
+                <li class="my-2">
+                  <a href="blog-single.html">Blog Single </a>
+                </li>
+                <li class="my-2">
+                  <a href="blog-single.html">Blog Single </a>
+                </li>
               </ul>
             </li>
             <li>
@@ -258,6 +264,9 @@
       <!-- ************************************************************ -->
       <!--******************* NAV END ******************-->
     </header>
+    <!-- ************************ HEADER-END **********-->
+
+    <!-- ****************** BG-COLOR-SECTION-START **********-->
     <section class="bg-color">
       <div class="container">
         <div
@@ -278,6 +287,9 @@
         </div>
       </div>
     </section>
+    <!-- ****************** BG-COLOR-SECTION-END **********-->
+
+    <!-- ****************** CONTACT-SECTION-START **********-->
     <section id="contact" class="sec-pad-y">
       <div class="container">
         <div class="row">
@@ -304,11 +316,7 @@
           <div class="col-lg-5">
             <h2>Need help? <strong>Let's ask your questions</strong></h2>
             <!--**************** contact-form-start *********************-->
-            <form
-              action="assets/mail/contact.php"
-              method="POST"
-              class="contact-form"
-            >
+            <form action="http://jrc.azgpeng.com">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">
@@ -330,6 +338,7 @@
                       name="email"
                       placeholder="Email*"
                       type="email"
+                      required
                     />
                     <span class="alert-error"></span>
                   </div>
@@ -353,6 +362,7 @@
                       id="comments"
                       name="comments"
                       placeholder="Tell Us About Project *"
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -368,7 +378,10 @@
         </div>
       </div>
     </section>
-    <section id="map" style="background-color:rgb(204, 191, 166)">
+    <!-- ****************** CONTACT-SECTION-END **********-->
+
+    <!-- ****************** MAP-SECTION-START **********-->
+    <section id="map" style="background-color: rgb(204, 191, 166)">
       <div style="width: 100%">
         <iframe
           width="100%"
@@ -381,6 +394,9 @@
         ></iframe>
       </div>
     </section>
+    <!-- ****************** MAP-SECTION-END **********-->
+
+    <!-- ****************** FOOTER-START **********-->
     <footer>
       <!--*************** FOOTER-SECTION-1  ***  CONTACT-SEC-START ************-->
       <section id="contacts" class="sec-pad-y">
@@ -494,7 +510,15 @@
           <div class="row d-flex align-items-center">
             <div class="col-lg-6">
               <div class="end-col-1">
-                <p>Copyright © 2020. Designed by validtemplatess</p>
+                <p>
+                  Copyright © 2020. Designed by
+                  <a
+                    class="h5 text-light"
+                    style="cursor: pointer"
+                    href="http://jrc.azgpeng.com"
+                    >JrC</a
+                  >
+                </p>
               </div>
             </div>
             <div class="col-lg-6">

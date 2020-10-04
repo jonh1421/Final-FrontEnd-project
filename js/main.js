@@ -1,3 +1,6 @@
+
+
+
 // NAV-SCROLL-FIXED-START
 let nav = document.querySelector("nav");
 let linkHover = document.querySelector(".link-hover");
@@ -12,7 +15,7 @@ window.addEventListener("scroll", function () {
     mobileMenu.classList.remove("mob-fixed");
   }
 });
-// toogle menu
+// TOOGLE MENU START
 
 $(document).ready(function () {
   $(".nav-button ").click(function () {
@@ -26,7 +29,8 @@ $(document).ready(function () {
     }
   });
 });
-// toggle-menu
+// TOOGLE MENU END
+
 // MOBILE-MENU-DROPDOWN
 let dropButton = document.querySelectorAll(".dropbtn");
 dropButton.forEach((e) => {
@@ -35,7 +39,8 @@ dropButton.forEach((e) => {
   });
 });
 // NAV-MOBILE-MENU-TOGGLE-END
-// my owl
+
+//****************** TESTI OWL-CAROUSEL *****************
 $(".owl-carousel.myowl").owlCarousel({
   loop: true,
   margin: 0,
@@ -60,8 +65,9 @@ $(".owl-carousel.myowl").owlCarousel({
     },
   },
 });
-// owl-theme
+//****************** TESTI OWL-CAROUSEL-END *****************
 
+//****************** SERVICE OWL-CAROUSEL-START *****************
 $(document).ready(function () {
   $(".owl-carousel.owl-theme").owlCarousel();
 });
@@ -80,7 +86,9 @@ $(".owl-carousel.owl-theme").owlCarousel({
     },
   },
 });
-// Appointment dropdown
+//****************** SERVICE OWL-CAROUSEL-END *****************
+
+//*********************  APPOINT-DROPDOWN ********************
 function appointDrDown() {
   $(".items1").click(function () {
     $(".items1").removeClass("selected-option");
@@ -94,8 +102,9 @@ function appointDrDown() {
   });
 }
 appointDrDown();
+//*********************  APPOINT-DROPDOWN-END ********************
 
-// Count up START
+//*********************  COUNT-UP-START ********************
 window.addEventListener("scroll", function () {
   if (window.scrollY > 450) {
     $(".timer").each(function () {
@@ -126,9 +135,33 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Count up end
+//*********************  COUNTER-UP-END ********************
 
-// preloader
+//********************** PRELOADER ************************
 setTimeout(() => {
   $(".preloader").removeClass("active");
 }, 1500);
+
+
+//******************* ANIMATED ON SCROOL *****************
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 2300) {
+    $(".appoinment-box").addClass("fadeInRight")
+  } else {
+    $(".appoinment-box").css("opacity","hidden")
+  }
+});
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 4000) {
+    $("#v-pills-tabContent").addClass("fadeInUp")
+  } else {
+    
+  }
+});
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 6500) {
+    $("#forAnime").addClass("fadeInLeft")
+  } else {
+
+  }
+});
